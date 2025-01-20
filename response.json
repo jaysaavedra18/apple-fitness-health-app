@@ -1,0 +1,5277 @@
+{
+  "data": {
+    "workouts": [
+      {
+        "name": "Outdoor Walk",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 4.0472712611123924
+        },
+        "end": "2024-12-22 15:49:11 -1000",
+        "distance": {
+          "qty": 2.4665902930471879,
+          "units": "mi"
+        },
+        "start": "2024-12-22 14:39:22 -1000",
+        "activeEnergyBurned": {
+          "qty": 262.12399999999997,
+          "units": "kcal"
+        },
+        "temperature": {
+          "units": "degF",
+          "qty": 80.258174133296393
+        },
+        "duration": 4183.902666926384,
+        "humidity": {
+          "units": "%",
+          "qty": 62
+        },
+        "metadata": {},
+        "id": "7787404D-5B3F-4003-93CF-825D98CB2A75",
+        "location": "Outdoor"
+      },
+      {
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 523.55427484519782
+        },
+        "duration": 3788.1277329921722,
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "humidity": {
+          "units": "%",
+          "qty": 62
+        },
+        "location": "Pool",
+        "metadata": {},
+        "id": "335BE4F3-9079-42AC-BBB6-BBC6CCDF3579",
+        "temperature": {
+          "units": "degF",
+          "qty": 80.412528610225095
+        },
+        "name": "Pool Swim",
+        "distance": {
+          "units": "mi",
+          "qty": 1.1495367056390677
+        },
+        "end": "2024-12-22 14:35:26 -1000",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 7.4116015731169975
+        },
+        "start": "2024-12-22 13:32:18 -1000"
+      },
+      {
+        "start": "2024-12-22 12:24:05 -1000",
+        "intensity": {
+          "qty": 4.457631278379929,
+          "units": "kcal/hr·kg"
+        },
+        "metadata": {},
+        "humidity": {
+          "units": "%",
+          "qty": 63
+        },
+        "distance": {
+          "qty": 2.4370999982151371,
+          "units": "mi"
+        },
+        "end": "2024-12-22 13:27:40 -1000",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 273.31999999999999
+        },
+        "elevationUp": {
+          "units": "ft",
+          "qty": 187.89370078740157
+        },
+        "duration": 3814.1164059638977,
+        "temperature": {
+          "units": "degF",
+          "qty": 80.578727722163578
+        },
+        "name": "Outdoor Walk",
+        "location": "Outdoor",
+        "id": "8818490E-F8E0-4D79-9CA0-FEC93DD36BB5"
+      },
+      {
+        "start": "2024-12-20 16:23:06 -1000",
+        "distance": {
+          "units": "mi",
+          "qty": 2.4019840441723939
+        },
+        "metadata": {},
+        "id": "02EE2674-9C77-4EF5-8F2F-CC300E0C35A4",
+        "activeEnergyBurned": {
+          "qty": 250.92600000000036,
+          "units": "kcal"
+        },
+        "temperature": {
+          "qty": 78.007999999995633,
+          "units": "degF"
+        },
+        "duration": 3873.381206035614,
+        "name": "Outdoor Walk",
+        "end": "2024-12-20 17:27:40 -1000",
+        "location": "Outdoor",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 4.1454823018347851
+        },
+        "humidity": {
+          "qty": 75,
+          "units": "%"
+        }
+      },
+      {
+        "duration": 3489.9251879453659,
+        "temperature": {
+          "units": "degF",
+          "qty": 79.465999999995617
+        },
+        "intensity": {
+          "qty": 7.8493174569585324,
+          "units": "kcal/hr·kg"
+        },
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "location": "Pool",
+        "distance": {
+          "units": "mi",
+          "qty": 1.1495367056390677
+        },
+        "end": "2024-12-20 16:15:14 -1000",
+        "start": "2024-12-20 15:17:04 -1000",
+        "metadata": {},
+        "humidity": {
+          "units": "%",
+          "qty": 72
+        },
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 518.92204559349352
+        },
+        "id": "9C284EEF-9DC7-4DDE-B922-28E273040FD7",
+        "name": "Pool Swim"
+      },
+      {
+        "end": "2024-12-20 15:11:49 -1000",
+        "metadata": {},
+        "distance": {
+          "units": "mi",
+          "qty": 2.4073490228902545
+        },
+        "location": "Outdoor",
+        "elevationUp": {
+          "units": "ft",
+          "qty": 151.41076115485563
+        },
+        "temperature": {
+          "qty": 80.61799999999559,
+          "units": "degF"
+        },
+        "duration": 3062.4114309549332,
+        "id": "ABBB1F86-31AF-4FF0-A7DE-39AC308B6103",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 5.0560840962730529
+        },
+        "humidity": {
+          "units": "%",
+          "qty": 70
+        },
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 260.53730342909455
+        },
+        "name": "Outdoor Walk",
+        "start": "2024-12-20 14:20:46 -1000"
+      },
+      {
+        "duration": 3342.5631629228592,
+        "start": "2024-12-19 16:08:25 -1000",
+        "name": "Outdoor Walk",
+        "humidity": {
+          "qty": 74,
+          "units": "%"
+        },
+        "elevationUp": {
+          "qty": 72.112860892388454,
+          "units": "ft"
+        },
+        "metadata": {},
+        "distance": {
+          "units": "mi",
+          "qty": 2.4034590582687194
+        },
+        "intensity": {
+          "qty": 4.4246591882524342,
+          "units": "kcal/hr·kg"
+        },
+        "id": "C99F92B7-D23B-4290-9B84-009CA7BE7802",
+        "location": "Outdoor",
+        "activeEnergyBurned": {
+          "qty": 238.47694602196646,
+          "units": "kcal"
+        },
+        "temperature": {
+          "units": "degF",
+          "qty": 78.853999999995565
+        },
+        "end": "2024-12-19 17:04:07 -1000"
+      },
+      {
+        "activeEnergyBurned": {
+          "qty": 513.62149930149997,
+          "units": "kcal"
+        },
+        "distance": {
+          "qty": 1.1650709854450012,
+          "units": "mi"
+        },
+        "intensity": {
+          "qty": 7.3241652747552992,
+          "units": "kcal/hr·kg"
+        },
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "end": "2024-12-19 16:02:34 -1000",
+        "location": "Pool",
+        "temperature": {
+          "qty": 79.627999999995581,
+          "units": "degF"
+        },
+        "id": "C05151E0-5D0E-417F-AD11-C9CB6D39D7A4",
+        "metadata": {},
+        "humidity": {
+          "units": "%",
+          "qty": 72
+        },
+        "start": "2024-12-19 14:59:46 -1000",
+        "duration": 3768.8173449039459,
+        "name": "Pool Swim"
+      },
+      {
+        "duration": 3012.9087209701538,
+        "location": "Outdoor",
+        "intensity": {
+          "qty": 5.0910029629726887,
+          "units": "kcal/hr·kg"
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 2.466009717552804
+        },
+        "humidity": {
+          "units": "%",
+          "qty": 70
+        },
+        "start": "2024-12-19 14:06:39 -1000",
+        "end": "2024-12-19 14:56:52 -1000",
+        "temperature": {
+          "qty": 80.635999999995576,
+          "units": "degF"
+        },
+        "activeEnergyBurned": {
+          "qty": 259.1259147962333,
+          "units": "kcal"
+        },
+        "name": "Outdoor Walk",
+        "elevationUp": {
+          "qty": 169.88188976377953,
+          "units": "ft"
+        },
+        "id": "35B7F512-C139-4D5B-A7BF-52974F64EF9D",
+        "metadata": {}
+      },
+      {
+        "metadata": {},
+        "duration": 3855.6284199953079,
+        "name": "Outdoor Walk",
+        "start": "2024-12-18 16:23:56 -1000",
+        "location": "Outdoor",
+        "activeEnergyBurned": {
+          "qty": 240.53087075973022,
+          "units": "kcal"
+        },
+        "intensity": {
+          "qty": 4.0486874104460044,
+          "units": "kcal/hr·kg"
+        },
+        "distance": {
+          "qty": 2.3847172834352772,
+          "units": "mi"
+        },
+        "temperature": {
+          "qty": 78.925999999995611,
+          "units": "degF"
+        },
+        "end": "2024-12-18 17:28:12 -1000",
+        "humidity": {
+          "units": "%",
+          "qty": 73
+        },
+        "id": "D25A3FB7-84CB-4859-9DCB-7765931B86E4"
+      },
+      {
+        "id": "C85493B6-2312-4F6E-8232-039CEE3EAC3D",
+        "start": "2024-12-18 15:17:25 -1000",
+        "temperature": {
+          "units": "degF",
+          "qty": 80.20399999999556
+        },
+        "distance": {
+          "qty": 1.2272081046687346,
+          "units": "mi"
+        },
+        "lapLength": {
+          "qty": 0.015534279805933349,
+          "units": "mi"
+        },
+        "duration": 3704.0143630504608,
+        "humidity": {
+          "qty": 71,
+          "units": "%"
+        },
+        "location": "Pool",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 547.55500000000586
+        },
+        "metadata": {},
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 7.8394624266903365
+        },
+        "name": "Pool Swim",
+        "end": "2024-12-18 16:19:09 -1000"
+      },
+      {
+        "elevationUp": {
+          "units": "ft",
+          "qty": 173.88451443569554
+        },
+        "location": "Outdoor",
+        "name": "Outdoor Walk",
+        "intensity": {
+          "qty": 4.3418200316186768,
+          "units": "kcal/hr·kg"
+        },
+        "distance": {
+          "qty": 2.3519229054323039,
+          "units": "mi"
+        },
+        "metadata": {},
+        "activeEnergyBurned": {
+          "qty": 274.76081325337412,
+          "units": "kcal"
+        },
+        "id": "6D5F8B0B-7D3B-4B0A-AC46-994333EB5950",
+        "duration": 3925.2540340423584,
+        "end": "2024-12-18 14:56:30 -1000",
+        "start": "2024-12-18 13:51:05 -1000"
+      },
+      {
+        "distance": {
+          "units": "mi",
+          "qty": 1.3048795036984013
+        },
+        "start": "2024-12-16 15:45:15 -1000",
+        "location": "Pool",
+        "name": "Pool Swim",
+        "end": "2024-12-16 16:56:14 -1000",
+        "lapLength": {
+          "qty": 0.015534279805933349,
+          "units": "mi"
+        },
+        "duration": 4259.4456030130386,
+        "intensity": {
+          "qty": 7.6450481481999493,
+          "units": "kcal/hr·kg"
+        },
+        "activeEnergyBurned": {
+          "qty": 611.87414984648433,
+          "units": "kcal"
+        },
+        "metadata": {},
+        "id": "D4ED106A-D252-44C3-880F-F63879041AEB"
+      },
+      {
+        "elevationUp": {
+          "qty": 78.412073490813654,
+          "units": "ft"
+        },
+        "location": "Outdoor",
+        "id": "168612BF-E3BF-40FB-8DA4-FCECA2DF2986",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 244.40254575029093
+        },
+        "metadata": {},
+        "distance": {
+          "qty": 2.3870904111717084,
+          "units": "mi"
+        },
+        "start": "2024-12-12 15:58:51 -1000",
+        "name": "Outdoor Walk",
+        "end": "2024-12-12 17:00:55 -1000",
+        "intensity": {
+          "qty": 4.1806330350989507,
+          "units": "kcal/hr·kg"
+        },
+        "temperature": {
+          "units": "degF",
+          "qty": 78.349999999995617
+        },
+        "duration": 3724.3186030387878,
+        "humidity": {
+          "qty": 71,
+          "units": "%"
+        }
+      },
+      {
+        "humidity": {
+          "qty": 69,
+          "units": "%"
+        },
+        "start": "2024-12-12 14:52:13 -1000",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 499.14420988379715
+        },
+        "end": "2024-12-12 15:53:42 -1000",
+        "id": "CED84860-AABC-42BF-89E1-DC1A2E88A8E1",
+        "location": "Pool",
+        "name": "Pool Swim",
+        "metadata": {},
+        "lapLength": {
+          "qty": 0.015534279805933349,
+          "units": "mi"
+        },
+        "intensity": {
+          "qty": 7.2593142240711819,
+          "units": "kcal/hr·kg"
+        },
+        "distance": {
+          "qty": 1.071865306609401,
+          "units": "mi"
+        },
+        "temperature": {
+          "qty": 79.08799999999566,
+          "units": "degF"
+        },
+        "duration": 3689.5088700056076
+      },
+      {
+        "name": "Outdoor Walk",
+        "metadata": {},
+        "id": "C2590E14-DB8B-4586-A558-645B27339453",
+        "start": "2024-12-12 13:57:34 -1000",
+        "end": "2024-12-12 14:52:07 -1000",
+        "activeEnergyBurned": {
+          "qty": 247.64424707617979,
+          "units": "kcal"
+        },
+        "duration": 3273.7404969930649,
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 4.6046562547575993
+        },
+        "location": "Outdoor",
+        "distance": {
+          "qty": 2.2260740995301687,
+          "units": "mi"
+        },
+        "elevationUp": {
+          "qty": 172.4737532808399,
+          "units": "ft"
+        }
+      },
+      {
+        "distance": {
+          "units": "mi",
+          "qty": 1.071865306609401
+        },
+        "duration": 3688.9899920225143,
+        "name": "Pool Swim",
+        "lapLength": {
+          "qty": 0.015534279805933349,
+          "units": "mi"
+        },
+        "intensity": {
+          "qty": 7.6971455785278664,
+          "units": "kcal/hr·kg"
+        },
+        "end": "2024-12-11 15:50:09 -1000",
+        "location": "Pool",
+        "start": "2024-12-11 14:48:40 -1000",
+        "metadata": {},
+        "activeEnergyBurned": {
+          "qty": 533.56423309082629,
+          "units": "kcal"
+        },
+        "id": "DAA547A6-13F5-4D00-B301-0A4D0B88A2F9"
+      },
+      {
+        "distance": {
+          "qty": 1.071865306609401,
+          "units": "mi"
+        },
+        "end": "2024-12-08 16:06:11 -1000",
+        "id": "5ACB14D8-6BEB-4643-8ED3-F4642D3BEF85",
+        "humidity": {
+          "qty": 68,
+          "units": "%"
+        },
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "activeEnergyBurned": {
+          "qty": 467.3272630010992,
+          "units": "kcal"
+        },
+        "intensity": {
+          "qty": 6.2830621242958484,
+          "units": "kcal/hr·kg"
+        },
+        "start": "2024-12-08 14:57:02 -1000",
+        "temperature": {
+          "qty": 79.21399999999565,
+          "units": "degF"
+        },
+        "name": "Pool Swim",
+        "location": "Pool",
+        "duration": 4149.5601700544357,
+        "metadata": {}
+      },
+      {
+        "duration": 4812.220165014267,
+        "metadata": {},
+        "distance": {
+          "qty": 1.1340024258331345,
+          "units": "mi"
+        },
+        "id": "55587502-6A79-4809-89C6-F51C54717D31",
+        "start": "2024-12-06 14:38:10 -1000",
+        "activeEnergyBurned": {
+          "qty": 537.97302492263827,
+          "units": "kcal"
+        },
+        "humidity": {
+          "qty": 74,
+          "units": "%"
+        },
+        "end": "2024-12-06 15:58:22 -1000",
+        "intensity": {
+          "qty": 6.2343354169810299,
+          "units": "kcal/hr·kg"
+        },
+        "location": "Pool",
+        "temperature": {
+          "qty": 78.439999999995649,
+          "units": "degF"
+        },
+        "name": "Pool Swim",
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        }
+      },
+      {
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 221.4656915314809
+        },
+        "duration": 3335.2925760746002,
+        "humidity": {
+          "qty": 69,
+          "units": "%"
+        },
+        "end": "2024-12-05 17:02:00 -1000",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 4.1958471593835984
+        },
+        "metadata": {},
+        "elevationUp": {
+          "units": "ft",
+          "qty": 67.71653543307086
+        },
+        "location": "Outdoor",
+        "start": "2024-12-05 16:06:25 -1000",
+        "name": "Outdoor Walk",
+        "temperature": {
+          "units": "degF",
+          "qty": 78.709999999995603
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 2.1548679112876843
+        },
+        "id": "54E467AF-5D67-4445-B03C-1BAB05118511"
+      },
+      {
+        "name": "Pool Swim",
+        "location": "Pool",
+        "activeEnergyBurned": {
+          "qty": 573.3912029127124,
+          "units": "kcal"
+        },
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "metadata": {},
+        "id": "58C4829B-3EF2-4706-9C8E-7923D4EA5100",
+        "start": "2024-12-05 14:35:40 -1000",
+        "duration": 4797.8080600500107,
+        "distance": {
+          "qty": 1.1340024258331345,
+          "units": "mi"
+        },
+        "intensity": {
+          "qty": 6.5751510559759838,
+          "units": "kcal/hr·kg"
+        },
+        "end": "2024-12-05 15:55:38 -1000",
+        "temperature": {
+          "units": "degF",
+          "qty": 78.835999999995593
+        },
+        "humidity": {
+          "qty": 69,
+          "units": "%"
+        }
+      },
+      {
+        "duration": 2970.2147079706192,
+        "id": "106A2198-AEF8-4B1A-A37D-C77EE3788DB1",
+        "temperature": {
+          "units": "degF",
+          "qty": 80.563999999995644
+        },
+        "location": "Outdoor",
+        "metadata": {},
+        "distance": {
+          "qty": 2.4370691647632583,
+          "units": "mi"
+        },
+        "name": "Outdoor Walk",
+        "humidity": {
+          "qty": 65,
+          "units": "%"
+        },
+        "start": "2024-12-05 13:39:08 -1000",
+        "elevationUp": {
+          "units": "ft",
+          "qty": 178.93700787401573
+        },
+        "activeEnergyBurned": {
+          "qty": 276.404200053956,
+          "units": "kcal"
+        },
+        "end": "2024-12-05 14:28:38 -1000",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 5.3986654500661269
+        }
+      },
+      {
+        "name": "Pool Swim",
+        "start": "2024-12-04 14:46:16 -1000",
+        "temperature": {
+          "qty": 79.429999999995658,
+          "units": "degF"
+        },
+        "duration": 4943.0807659626007,
+        "end": "2024-12-04 16:08:39 -1000",
+        "humidity": {
+          "units": "%",
+          "qty": 71
+        },
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 5.9624026811712527
+        },
+        "id": "81A79C21-26A3-48C8-9E6C-CBC27A2BDDFC",
+        "lapLength": {
+          "qty": 0.015534279805933349,
+          "units": "mi"
+        },
+        "location": "Pool",
+        "activeEnergyBurned": {
+          "qty": 521.88400000001377,
+          "units": "kcal"
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 1.0873995864153345
+        },
+        "metadata": {}
+      },
+      {
+        "start": "2024-12-03 14:40:42 -1000",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 509.65565300577015
+        },
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 5.723137110176026
+        },
+        "duration": 5084.2620450258255,
+        "distance": {
+          "qty": 1.0252624671916011,
+          "units": "mi"
+        },
+        "name": "Pool Swim",
+        "end": "2024-12-03 16:05:26 -1000",
+        "lapLength": {
+          "units": "mi",
+          "qty": 0.015534279805933349
+        },
+        "id": "5496FFFF-738C-489E-9B3A-DE5F23DA1B0C",
+        "location": "Pool",
+        "metadata": {}
+      },
+      {
+        "id": "6A2133F1-EC75-4EFB-B217-5C1DB080C55F",
+        "duration": 372.83990800380707,
+        "end": "2024-10-31 13:55:43 -1000",
+        "location": "Indoor",
+        "start": "2024-10-31 13:49:30 -1000",
+        "name": "Indoor Run",
+        "intensity": {
+          "qty": 7.8269492818825759,
+          "units": "kcal/hr·kg"
+        },
+        "temperature": {
+          "units": "degF",
+          "qty": 82.363999999995627
+        },
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 54.719760963357338
+        },
+        "humidity": {
+          "units": "%",
+          "qty": 69
+        },
+        "metadata": {},
+        "distance": {
+          "units": "mi",
+          "qty": 0.48534133998010354
+        }
+      },
+      {
+        "start": "2024-10-31 12:55:17 -1000",
+        "end": "2024-10-31 13:48:53 -1000",
+        "activeEnergyBurned": {
+          "qty": 261.62005227875886,
+          "units": "kcal"
+        },
+        "duration": 3216.62531208992,
+        "humidity": {
+          "units": "%",
+          "qty": 69
+        },
+        "metadata": {},
+        "name": "Traditional Strength Training",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 2.5903407675881049
+        },
+        "id": "A6E69AF4-087A-4950-BF2C-A5A2393B576E",
+        "temperature": {
+          "qty": 82.039999999995615,
+          "units": "degF"
+        }
+      },
+      {
+        "metadata": {},
+        "start": "2024-10-29 17:17:45 -1000",
+        "humidity": {
+          "qty": 76,
+          "units": "%"
+        },
+        "location": "Outdoor",
+        "elevationUp": {
+          "units": "ft",
+          "qty": 18.602362204724407
+        },
+        "id": "158ECEB2-C3D5-4928-B730-1E215C389B8A",
+        "name": "Outdoor Run",
+        "end": "2024-10-29 17:50:34 -1000",
+        "activeEnergyBurned": {
+          "qty": 304.07956417957831,
+          "units": "kcal"
+        },
+        "intensity": {
+          "qty": 8.1086779496220505,
+          "units": "kcal/hr·kg"
+        },
+        "duration": 1968.9663619995117,
+        "temperature": {
+          "units": "degF",
+          "qty": 79.267999999995595
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 2.7090012583819187
+        }
+      },
+      {
+        "id": "731B4268-8A95-4926-8B77-B65DC2EAC51E",
+        "end": "2024-10-29 17:17:44 -1000",
+        "intensity": {
+          "qty": 3.8425470743226442,
+          "units": "kcal/hr·kg"
+        },
+        "name": "Outdoor Walk",
+        "start": "2024-10-29 17:00:09 -1000",
+        "temperature": {
+          "qty": 79.609999999995594,
+          "units": "degF"
+        },
+        "location": "Outdoor",
+        "humidity": {
+          "qty": 74,
+          "units": "%"
+        },
+        "duration": 1055.3289499282837,
+        "metadata": {},
+        "elevationUp": {
+          "qty": 9.6456692913385815,
+          "units": "ft"
+        },
+        "activeEnergyBurned": {
+          "qty": 60.911818731320153,
+          "units": "kcal"
+        },
+        "distance": {
+          "qty": 0.65412345297254548,
+          "units": "mi"
+        }
+      },
+      {
+        "id": "F6360B82-5AF2-40F9-868E-E9877C3CB759",
+        "start": "2024-10-28 15:23:02 -1000",
+        "end": "2024-10-28 16:08:29 -1000",
+        "distance": {
+          "qty": 3.4125701246607725,
+          "units": "mi"
+        },
+        "name": "Outdoor Run",
+        "location": "Outdoor",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 7.5502679851416703
+        },
+        "temperature": {
+          "qty": 81.03199999999562,
+          "units": "degF"
+        },
+        "elevationUp": {
+          "units": "ft",
+          "qty": 15.616797900262466
+        },
+        "metadata": {},
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 386.88200000000001
+        },
+        "duration": 2727.1879529953003,
+        "humidity": {
+          "qty": 75,
+          "units": "%"
+        }
+      },
+      {
+        "duration": 2921.8780860900879,
+        "elevationUp": {
+          "qty": 85.761154855643042,
+          "units": "ft"
+        },
+        "metadata": {},
+        "location": "Outdoor",
+        "name": "Outdoor Run",
+        "start": "2024-10-25 15:35:28 -1000",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 7.3657828845079338
+        },
+        "id": "F835E1E4-CDE2-4F1E-96A6-D26924728959",
+        "humidity": {
+          "units": "%",
+          "qty": 69
+        },
+        "end": "2024-10-25 16:24:10 -1000",
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 402.67078607792223
+        },
+        "temperature": {
+          "units": "degF",
+          "qty": 82.309999999995568
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 3.5645865377670147
+        }
+      },
+      {
+        "metadata": {},
+        "name": "Outdoor Run",
+        "location": "Outdoor",
+        "start": "2024-10-25 15:34:09 -1000",
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 3.5795781582093293
+        },
+        "id": "D5A07D42-ACD2-44E8-8D31-B9239A6B96C8",
+        "temperature": {
+          "qty": 82.327999999995555,
+          "units": "degF"
+        },
+        "humidity": {
+          "qty": 69,
+          "units": "%"
+        },
+        "end": "2024-10-25 15:35:19 -1000",
+        "duration": 70.504310011863708,
+        "activeEnergyBurned": {
+          "qty": 3.4145610444004513,
+          "units": "kcal"
+        },
+        "distance": {
+          "units": "mi",
+          "qty": 0.035287673866692605
+        }
+      },
+      {
+        "end": "2024-10-24 18:47:07 -1000",
+        "metadata": {},
+        "activeEnergyBurned": {
+          "units": "kcal",
+          "qty": 370.65100000000064
+        },
+        "intensity": {
+          "units": "kcal/hr·kg",
+          "qty": 8.1671846040806741
+        },
+        "duration": 2375.9612540006638,
+        "temperature": {
+          "qty": 78.925999999995611,
+          "units": "degF"
+        },
+        "id": "44A3ED4A-1EBE-474B-86EB-07F9287D2E6B",
+        "distance": {
+          "qty": 3.1932743779242734,
+          "units": "mi"
+        },
+        "start": "2024-10-24 18:07:31 -1000",
+        "humidity": {
+          "qty": 74,
+          "units": "%"
+        },
+        "location": "Outdoor",
+        "name": "Outdoor Run"
+      },
+      {
+        "activeEnergyBurned": {
+          "qty": 260.91990395772126,
+          "units": "kcal"
+        },
+        "humidity": {
+          "units": "%",
+          "qty": 70
+        },
+        "end": "2024-10-23 17:27:54 -1000",
+        "location": "Outdoor",
+        "name": "Outdoor Run",
+        "distance": {
+          "qty": 2.2540560821437778,
+          "units": "mi"
+        },
+        "start": "2024-10-23 17:01:33 -1000",
+        "intensity": {
+          "qty": 8.5449089810687262,
+          "units": "kcal/hr·kg"
+        },
+        "temperature": {
+          "qty": 80.779999999995653,
+          "units": "degF"
+        },
+        "id": "60D16322-0CC9-4E10-9DD9-6EFDA57D9024",
+        "duration": 1580.71131503582,
+        "metadata": {}
+      }
+    ],
+    "metrics": [
+      {
+        "data": [
+          {
+            "qty": 3,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 2
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 2
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 2
+          },
+          {
+            "qty": 2,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "qty": 3,
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 3
+          },
+          {
+            "qty": 4,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 5
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 5
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 3
+          },
+          {
+            "qty": 3,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 4
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 3
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 7
+          },
+          {
+            "qty": 5,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "qty": 6,
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "qty": 4,
+            "date": "2024-12-22 00:00:00 -1000"
+          }
+        ],
+        "name": "apple_stand_hour",
+        "units": "count"
+      },
+      {
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 36,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 41,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 53,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "qty": 46,
+            "date": "2024-10-28 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 52,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "qty": 71,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "qty": 86,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "qty": 78,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "qty": 185,
+            "date": "2024-12-05 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 83,
+            "date": "2024-12-06 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 72,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 62,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 169,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "qty": 73,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 170
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 165,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 176,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 1
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 176,
+            "source": "Apple Watch de Jason"
+          }
+        ],
+        "units": "min",
+        "name": "apple_exercise_time"
+      },
+      {
+        "data": [
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 1804.461942257218
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 1913.8232720909887,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 1995.8442694663167,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1995.8442694663167,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1886.482939632546,
+            "date": "2024-12-08 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 1886.482939632546,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 1886.482939632546
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 2296.5879265091862,
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "qty": 2159.8862642169729,
+            "date": "2024-12-18 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 2050.524934383202,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 2023.1846019247594,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "qty": 2023.1846019247594,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-22 00:00:00 -1000"
+          }
+        ],
+        "units": "yd",
+        "name": "swimming_distance"
+      },
+      {
+        "data": [
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 875,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 949
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 1047
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1005
+          },
+          {
+            "qty": 876,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 903
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 853
+          },
+          {
+            "qty": 1078,
+            "date": "2024-12-16 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 997,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 911
+          },
+          {
+            "qty": 923,
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 919,
+            "source": "Apple Watch de Jason"
+          }
+        ],
+        "units": "count",
+        "name": "swimming_stroke_count"
+      },
+      {
+        "name": "flights_climbed",
+        "units": "count",
+        "data": [
+          {
+            "qty": 2,
+            "source": "The Baby",
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "qty": 3,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 7
+          },
+          {
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 1,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 2
+          },
+          {
+            "date": "2024-11-14 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-11-22 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 4,
+            "date": "2024-12-05 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 4,
+            "date": "2024-12-06 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 3,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "qty": 4,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-09 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 6,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 12
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-13 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 1,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "qty": 1,
+            "date": "2024-12-15 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 3
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 14
+          },
+          {
+            "qty": 33,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-22 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-23 00:00:00 -1000",
+            "qty": 1,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-12 00:00:00 -1000",
+            "qty": 1,
+            "source": "Apple Watch de Jason|The Baby"
+          }
+        ]
+      },
+      {
+        "units": "min",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 82,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 58,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 54
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 53
+          },
+          {
+            "qty": 59,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 91,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 110,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 101
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 199
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 110
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 76
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 68,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 179
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 80,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 216,
+            "date": "2024-12-18 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 178
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 205
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 209
+          }
+        ],
+        "name": "apple_stand_time"
+      },
+      {
+        "units": "kcal",
+        "name": "active_energy",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 411.8889999999995,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 405.55200000000048
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 420.52100000000002,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 0.56800000000000006,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 405.76100000000008
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 385.87000000000052
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 0.095000000000000001,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 546.3680000000079,
+            "date": "2024-10-31 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 0.50900000000000012,
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 0.113,
+            "date": "2024-11-04 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-06 00:00:00 -1000",
+            "qty": 0.27000000000000002
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 0.50700000000000001,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 0.29400000000000004,
+            "date": "2024-11-11 00:00:00 -1000"
+          },
+          {
+            "qty": 1.0810000000000002,
+            "date": "2024-11-12 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 0.113
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 583.53400000001056,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 589.286000000017,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 1117.0300000000261,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 681.63800000001606
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 2.1690000000000005
+          },
+          {
+            "qty": 500.1040000000084,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 554.22000000000287
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 1017.4090000000118,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 655.36400000000924,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-17 00:00:00 -1000",
+            "qty": 0.183,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 1148.7580000000098,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "qty": 1051.4240000000159,
+            "date": "2024-12-19 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1137.0200000000114,
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 2.1350000000000002,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 1098.5950000000053,
+            "source": "Apple Watch de Jason"
+          }
+        ]
+      },
+      {
+        "name": "basal_energy_burned",
+        "units": "kcal",
+        "data": [
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 572.99198199947807,
+            "date": "2024-10-22 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 1906.9705883067982
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 1898.4951043280364,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 1897.4907511368447,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 1464.6444872362415
+          },
+          {
+            "qty": 1346.3364732894752,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-27 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 1863.9488311749021,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 1900.4643665176575,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 1872.1205187215733
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 1222.0568972892718,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 852.02399401175489,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1872.4403033149026,
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-03 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 1821.5593048138157
+          },
+          {
+            "date": "2024-11-04 00:00:00 -1000",
+            "qty": 543.96939785952759,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 1398.6939857240161
+          },
+          {
+            "date": "2024-11-06 00:00:00 -1000",
+            "qty": 857.13301427598424,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1439.4102977228754,
+            "date": "2024-11-08 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 1185.755702277125
+          },
+          {
+            "qty": 705.03617485187704,
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-10 00:00:00 -1000"
+          },
+          {
+            "qty": 1872.2770919761251,
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-11 00:00:00 -1000"
+          },
+          {
+            "qty": 1872.5135234945928,
+            "source": "Apple Watch de Jason",
+            "date": "2024-11-12 00:00:00 -1000"
+          },
+          {
+            "qty": 899.73420967740674,
+            "date": "2024-11-13 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 761.04829765361694,
+            "date": "2024-12-02 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 1928.9344945175901
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 1928.777274891246
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 1966.4480137777637,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1952.5477241499423
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 1873.0473146574891,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1712.7768803528706,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 750.35660539600235,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1880.1063946041845,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 643.95310628002596,
+            "date": "2024-12-15 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 1920.690005605479,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1872.1992119831004,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 1992.4843449104605,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1957.7494546562889,
+            "date": "2024-12-19 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 1994.5135836934612,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 1850.1846097021544,
+            "date": "2024-12-21 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 1332.7736831698608
+          }
+        ]
+      },
+      {
+        "name": "vo2_max",
+        "data": [
+          {
+            "qty": 47.600000000000001,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 47.159999999999997
+          },
+          {
+            "qty": 47.310000000000002,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 47.710000000000001
+          },
+          {
+            "qty": 47.835000000000001,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "qty": 48.185000000000002,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 47.859999999999999
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 47.259999999999998
+          },
+          {
+            "qty": 44,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "qty": 41.774999999999999,
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "qty": 41.269999999999996,
+            "date": "2024-12-22 00:00:00 -1000"
+          }
+        ],
+        "units": "ml/(kg·min)"
+      },
+      {
+        "name": "step_count",
+        "data": [
+          {
+            "qty": 1902,
+            "date": "2024-10-21 00:00:00 -1000",
+            "source": "The Baby"
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "qty": 2685,
+            "source": "The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 9176.2087938758505,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "qty": 9613.9999999999982,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "qty": 10112.445422483777,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2692,
+            "date": "2024-10-26 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 170,
+            "date": "2024-10-27 00:00:00 -1000"
+          },
+          {
+            "qty": 6254,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 6749,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 1392
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 9622,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 3056,
+            "date": "2024-11-01 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-02 00:00:00 -1000",
+            "qty": 7169,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-03 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 119
+          },
+          {
+            "date": "2024-11-04 00:00:00 -1000",
+            "qty": 679,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 2110
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-06 00:00:00 -1000",
+            "qty": 368
+          },
+          {
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 1597,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 1686,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2136
+          },
+          {
+            "qty": 6014,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-10 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-11 00:00:00 -1000",
+            "qty": 948
+          },
+          {
+            "qty": 627,
+            "date": "2024-11-12 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 1012,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 3750,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-14 00:00:00 -1000"
+          },
+          {
+            "qty": 1198,
+            "date": "2024-11-15 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-16 00:00:00 -1000",
+            "qty": 5237
+          },
+          {
+            "qty": 2081,
+            "date": "2024-11-17 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 991,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-18 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-19 00:00:00 -1000",
+            "qty": 1514,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 1553
+          },
+          {
+            "qty": 1035,
+            "date": "2024-11-21 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 3868,
+            "date": "2024-11-22 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-23 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1729
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-24 00:00:00 -1000",
+            "qty": 528
+          },
+          {
+            "qty": 1044,
+            "date": "2024-11-25 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-26 00:00:00 -1000",
+            "qty": 564
+          },
+          {
+            "date": "2024-11-27 00:00:00 -1000",
+            "qty": 5864,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-28 00:00:00 -1000",
+            "qty": 161
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1292,
+            "date": "2024-11-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-30 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1141
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1445,
+            "date": "2024-12-01 00:00:00 -1000"
+          },
+          {
+            "qty": 260,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-02 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 3077.301718970024
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2451
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 13050
+          },
+          {
+            "qty": 3749.6619519205742,
+            "date": "2024-12-06 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 3100,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-07 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 5087.5811387320018,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "qty": 1959,
+            "date": "2024-12-09 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 3252,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-10 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 1969,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 12383,
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2058,
+            "date": "2024-12-13 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-14 00:00:00 -1000",
+            "qty": 3468
+          },
+          {
+            "qty": 958,
+            "date": "2024-12-15 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 2187.6776728732812
+          },
+          {
+            "qty": 2450,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 14380
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 12922
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 13940.216151400511
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 1986,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 15945.443111407189,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-22 00:00:00 -1000"
+          },
+          {
+            "qty": 4241,
+            "date": "2024-12-23 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1964,
+            "date": "2024-12-24 00:00:00 -1000"
+          },
+          {
+            "qty": 3402,
+            "date": "2024-12-25 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-26 00:00:00 -1000",
+            "qty": 1537,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-27 00:00:00 -1000",
+            "qty": 1578,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-28 00:00:00 -1000",
+            "qty": 1075,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-29 00:00:00 -1000",
+            "qty": 170
+          },
+          {
+            "qty": 1476,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-30 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-31 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 367
+          },
+          {
+            "qty": 1096,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-01 00:00:00 -1000"
+          },
+          {
+            "qty": 561,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-02 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-03 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 650
+          },
+          {
+            "date": "2025-01-04 00:00:00 -1000",
+            "qty": 1107,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-05 00:00:00 -1000",
+            "qty": 575,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 700,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-06 00:00:00 -1000"
+          },
+          {
+            "qty": 118,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-07 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-08 00:00:00 -1000",
+            "qty": 243,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 479,
+            "date": "2025-01-09 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-10 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 681
+          },
+          {
+            "qty": 860,
+            "date": "2025-01-11 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-12 00:00:00 -1000",
+            "qty": 1213
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 699,
+            "date": "2025-01-13 00:00:00 -1000"
+          },
+          {
+            "qty": 402,
+            "date": "2025-01-14 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-15 00:00:00 -1000",
+            "qty": 340
+          },
+          {
+            "qty": 469,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-16 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-17 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 1110
+          },
+          {
+            "date": "2025-01-18 00:00:00 -1000",
+            "qty": 271,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 346,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-19 00:00:00 -1000"
+          }
+        ],
+        "units": "count"
+      },
+      {
+        "name": "walking_running_distance",
+        "units": "mi",
+        "data": [
+          {
+            "date": "2024-10-21 00:00:00 -1000",
+            "source": "The Baby",
+            "qty": 0.74522421983046772
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "source": "The Baby",
+            "qty": 1.0380861167319735
+          },
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 4.8999150628361843,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 5.0804651714216229,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 5.3171067949621227
+          },
+          {
+            "qty": 1.0293206072349428,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-26 00:00:00 -1000"
+          },
+          {
+            "qty": 0.067121487525540535,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-10-27 00:00:00 -1000"
+          },
+          {
+            "qty": 3.7064504225848043,
+            "date": "2024-10-28 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 3.770630683278295,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.51434712969433993
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 4.2576796126482463
+          },
+          {
+            "qty": 1.1319190814116811,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-01 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2.6632243684855048,
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-03 00:00:00 -1000",
+            "qty": 0.043392454926021298
+          },
+          {
+            "qty": 0.24234498630760751,
+            "date": "2024-11-04 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.77896620664287664,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-06 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.13643811521462532
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 0.59580246677436288
+          },
+          {
+            "qty": 0.63519631740706983,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-08 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.7823568916004201,
+            "date": "2024-11-09 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 2.192402417279149,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-11 00:00:00 -1000",
+            "qty": 0.34924972754324757,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-12 00:00:00 -1000",
+            "qty": 0.22099688414116608,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 0.36979317150690527
+          },
+          {
+            "qty": 1.4173304005084761,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-14 00:00:00 -1000"
+          },
+          {
+            "qty": 0.46589096773807398,
+            "date": "2024-11-15 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 1.9726458262098956,
+            "date": "2024-11-16 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-17 00:00:00 -1000",
+            "qty": 0.79269386391657926
+          },
+          {
+            "qty": 0.36305490900442805,
+            "date": "2024-11-18 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-19 00:00:00 -1000",
+            "qty": 0.58593268473566107,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 0.58979308911997486,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-11-21 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.41805810833830814
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-22 00:00:00 -1000",
+            "qty": 1.3765057238145162
+          },
+          {
+            "date": "2024-11-23 00:00:00 -1000",
+            "qty": 0.66707411850731535,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.19612418775537396,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-11-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-25 00:00:00 -1000",
+            "qty": 0.36929950013316087,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.23182554481954462,
+            "date": "2024-11-26 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 2.2902676917843872,
+            "date": "2024-11-27 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.061284889744397636,
+            "date": "2024-11-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-29 00:00:00 -1000",
+            "qty": 0.5052862899889079,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.40509939887465257,
+            "date": "2024-11-30 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.55709768915943503,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-01 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-02 00:00:00 -1000",
+            "qty": 0.098594609471681124
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 1.2562014796052561
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 1.011069885106928
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 5.8318501062055264
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1.6300049567426191
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 1.264310195830983
+          },
+          {
+            "qty": 2.0247542766055791,
+            "date": "2024-12-08 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-09 00:00:00 -1000",
+            "qty": 0.74017569058842958
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-10 00:00:00 -1000",
+            "qty": 1.2977445725424523
+          },
+          {
+            "qty": 0.7890700539449399,
+            "date": "2024-12-11 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 5.4732020185015644
+          },
+          {
+            "qty": 0.7678305083841076,
+            "date": "2024-12-13 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 1.3327774414618676,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-15 00:00:00 -1000",
+            "qty": 0.33705158713400046,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.90018935765317254,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-17 00:00:00 -1000",
+            "qty": 0.97520404629164215,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 6.0016350104608964
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 5.917058775231788
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 6.258997066320851,
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 0.89119966487627877,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 6.6833116548654354
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-23 00:00:00 -1000",
+            "qty": 1.830609046285238
+          },
+          {
+            "date": "2024-12-24 00:00:00 -1000",
+            "qty": 0.84590433324003267,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 1.4611870716982782,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-25 00:00:00 -1000"
+          },
+          {
+            "qty": 0.65633748039522455,
+            "date": "2024-12-26 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.66301487706986839,
+            "date": "2024-12-27 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2024-12-28 00:00:00 -1000",
+            "qty": 0.43931119055844664
+          },
+          {
+            "date": "2024-12-29 00:00:00 -1000",
+            "qty": 0.072520019287687698,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.61221370104946982,
+            "date": "2024-12-30 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-31 00:00:00 -1000",
+            "qty": 0.17352399454798675,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-01 00:00:00 -1000",
+            "qty": 0.45576568483120616,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-02 00:00:00 -1000",
+            "qty": 0.25650008666283769,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.26552537659520531,
+            "date": "2025-01-03 00:00:00 -1000"
+          },
+          {
+            "qty": 0.47104643813187158,
+            "date": "2025-01-04 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.22142407776753145,
+            "date": "2025-01-05 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.29501960548068046,
+            "date": "2025-01-06 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-07 00:00:00 -1000",
+            "qty": 0.053670420402709744
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.10831197214990602,
+            "date": "2025-01-08 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-09 00:00:00 -1000",
+            "qty": 0.20508045386879115,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.29339458178347477,
+            "date": "2025-01-10 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-11 00:00:00 -1000",
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.37529201925805239
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-12 00:00:00 -1000",
+            "qty": 0.49082352969647214
+          },
+          {
+            "date": "2025-01-13 00:00:00 -1000",
+            "qty": 0.27655931269447004,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "qty": 0.17928670922603634,
+            "date": "2025-01-14 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-15 00:00:00 -1000",
+            "qty": 0.14789496823647738,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "date": "2025-01-16 00:00:00 -1000",
+            "qty": 0.2099729068114054,
+            "source": "Apple Watch de Jason|The Baby"
+          },
+          {
+            "qty": 0.46362830474605227,
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-17 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason|The Baby",
+            "date": "2025-01-18 00:00:00 -1000",
+            "qty": 0.11858380456897186
+          },
+          {
+            "date": "2025-01-19 00:00:00 -1000",
+            "qty": 0.13909467045642804,
+            "source": "Apple Watch de Jason|The Baby"
+          }
+        ]
+      },
+      {
+        "name": "environmental_audio_exposure",
+        "units": "dBASPL",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 78.555513353437121
+          },
+          {
+            "qty": 78.027986341491356,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "qty": 79.749330344043003,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 78.001266555991918
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 75.080865436081638
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 72.381788068128799
+          },
+          {
+            "qty": 77.907542417062558,
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "qty": 70.445134524984823,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "qty": 64.261945665869717,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "qty": 77.326041801078773,
+            "date": "2024-12-06 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 70.154322132432483
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 62.160104103849605
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 72.185524305100586
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 68.242960503406607
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 69.186709767286047
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 69.092600785581155
+          },
+          {
+            "qty": 71.060887207039983,
+            "date": "2024-12-20 00:00:00 -1000"
+          }
+        ]
+      },
+      {
+        "units": "count/min",
+        "name": "resting_heart_rate",
+        "data": [
+          {
+            "qty": 60,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 58
+          },
+          {
+            "qty": 79,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 67
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "qty": 33.496915887999229,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 33.495167227970221
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 33.937390860238651
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 32.232379208473965
+          }
+        ],
+        "name": "cardio_recovery",
+        "units": "count/min"
+      },
+      {
+        "name": "heart_rate",
+        "units": "count/min",
+        "data": [
+          {
+            "Max": 174,
+            "Min": 73,
+            "date": "2024-10-23 00:00:00 -1000",
+            "Avg": 124.28099135155782,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "Max": 175,
+            "Min": 67,
+            "Avg": 147.00642111407032
+          },
+          {
+            "Avg": 140.15539695257127,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-25 00:00:00 -1000",
+            "Max": 175,
+            "Min": 74
+          },
+          {
+            "Max": 175,
+            "Min": 52,
+            "Avg": 139.93655836207495,
+            "source": "Apple Watch de Jason",
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "Min": 71,
+            "Avg": 115.56257330267195,
+            "source": "Apple Watch de Jason",
+            "Max": 176,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "Min": 45,
+            "Max": 161,
+            "Avg": 100.92937960209653,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "Min": 72,
+            "Avg": 116.80774029683656,
+            "date": "2024-12-03 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "Max": 157
+          },
+          {
+            "Min": 56,
+            "Avg": 111.4137245849747,
+            "source": "Apple Watch de Jason",
+            "Max": 147,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "Avg": 114.86650466348007,
+            "Min": 80,
+            "source": "Apple Watch de Jason",
+            "Max": 153
+          },
+          {
+            "Max": 147,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-06 00:00:00 -1000",
+            "Avg": 108.91440452426224,
+            "Min": 58
+          },
+          {
+            "Max": 152,
+            "date": "2024-12-08 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "Min": 61,
+            "Avg": 124.88503705138112
+          },
+          {
+            "Max": 146,
+            "Min": 88,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-11 00:00:00 -1000",
+            "Avg": 127.68949612803043
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "Max": 147,
+            "Avg": 113.74862110066553,
+            "date": "2024-12-12 00:00:00 -1000",
+            "Min": 88
+          },
+          {
+            "Max": 150,
+            "source": "Apple Watch de Jason",
+            "Avg": 127.68109601373303,
+            "date": "2024-12-16 00:00:00 -1000",
+            "Min": 88
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "Avg": 114.5730563640862,
+            "Max": 152,
+            "date": "2024-12-18 00:00:00 -1000",
+            "Min": 72
+          },
+          {
+            "Avg": 119.86850525599715,
+            "Min": 56,
+            "source": "Apple Watch de Jason",
+            "Max": 156,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-20 00:00:00 -1000",
+            "Max": 144,
+            "Min": 52,
+            "Avg": 110.56634924894043
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-22 00:00:00 -1000",
+            "Min": 75,
+            "Avg": 113.2508207191682,
+            "Max": 144
+          }
+        ]
+      },
+      {
+        "units": "ms",
+        "name": "heart_rate_variability",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 11.778467302404056
+          },
+          {
+            "qty": 85.540322083573685,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 96.47110981042205
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 56.098637832660941
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 44.409165288328822
+          },
+          {
+            "qty": 63.425633037107836,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 25.500169269874064
+          },
+          {
+            "qty": 78.815658405898446,
+            "date": "2024-12-20 00:00:00 -1000"
+          }
+        ]
+      },
+      {
+        "units": "count/min",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 131
+          },
+          {
+            "qty": 95.500000000000014,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 110
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 82
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 84
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 94
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 103
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 98.5
+          },
+          {
+            "qty": 109,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "qty": 105.5,
+            "date": "2024-12-06 00:00:00 -1000"
+          },
+          {
+            "qty": 110,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 109
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 112
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 116
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 111
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 111
+          }
+        ],
+        "name": "walking_heart_rate_average"
+      },
+      {
+        "data": [
+          {
+            "qty": 3.75,
+            "date": "2024-10-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "qty": 0.16666666666666666
+          },
+          {
+            "qty": 5.2352941176470589,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 10.142857142857142
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 0.875
+          },
+          {
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "qty": 7.5,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "qty": 1,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 1.6666666666666667
+          },
+          {
+            "qty": 0.5,
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 1.2857142857142858
+          },
+          {
+            "qty": 2.6842105263157894,
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 0.75
+          },
+          {
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 9.2222222222222214
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 0.81818181818181823
+          },
+          {
+            "date": "2024-11-11 00:00:00 -1000",
+            "qty": 6
+          },
+          {
+            "qty": 0,
+            "date": "2024-11-12 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 10
+          },
+          {
+            "date": "2024-11-14 00:00:00 -1000",
+            "qty": 0.5
+          },
+          {
+            "date": "2024-11-15 00:00:00 -1000",
+            "qty": 0.66666666666666663
+          },
+          {
+            "qty": 13.9375,
+            "date": "2024-11-16 00:00:00 -1000"
+          },
+          {
+            "qty": 12.5,
+            "date": "2024-11-17 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-18 00:00:00 -1000",
+            "qty": 1.3333333333333333
+          },
+          {
+            "qty": 0,
+            "date": "2024-11-19 00:00:00 -1000"
+          },
+          {
+            "qty": 0.40000000000000002,
+            "date": "2024-11-20 00:00:00 -1000"
+          },
+          {
+            "qty": 6.666666666666667,
+            "date": "2024-11-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-22 00:00:00 -1000",
+            "qty": 1.8
+          },
+          {
+            "date": "2024-11-23 00:00:00 -1000",
+            "qty": 1.6000000000000001
+          },
+          {
+            "qty": 0,
+            "date": "2024-11-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-26 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-11-27 00:00:00 -1000",
+            "qty": 5.5555555555555554
+          },
+          {
+            "qty": 0,
+            "date": "2024-11-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-30 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "date": "2024-12-01 00:00:00 -1000",
+            "qty": 0.7142857142857143
+          },
+          {
+            "qty": 1,
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 1.8
+          },
+          {
+            "qty": 0.058823529411764705,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1.2
+          },
+          {
+            "qty": 0.58333333333333337,
+            "date": "2024-12-07 00:00:00 -1000"
+          },
+          {
+            "qty": 2.6923076923076925,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-09 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "date": "2024-12-10 00:00:00 -1000",
+            "qty": 0.90000000000000002
+          },
+          {
+            "qty": 0,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "qty": 1.0606060606060606,
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-13 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 0.5,
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "qty": 0,
+            "date": "2024-12-15 00:00:00 -1000"
+          },
+          {
+            "qty": 0,
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "qty": 0.54545454545454541,
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 3.7777777777777777
+          },
+          {
+            "qty": 1.4285714285714286,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 2.7142857142857144
+          },
+          {
+            "qty": 1,
+            "date": "2024-12-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 4.6326530612244898
+          },
+          {
+            "qty": 0.35714285714285715,
+            "date": "2024-12-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-24 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "date": "2024-12-25 00:00:00 -1000",
+            "qty": 0.90909090909090906
+          },
+          {
+            "date": "2024-12-26 00:00:00 -1000",
+            "qty": 3.1666666666666665
+          },
+          {
+            "date": "2024-12-27 00:00:00 -1000",
+            "qty": 0.59999999999999998
+          },
+          {
+            "qty": 3.6666666666666665,
+            "date": "2024-12-28 00:00:00 -1000"
+          },
+          {
+            "qty": 0.59999999999999998,
+            "date": "2024-12-30 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-01 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-03 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-04 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-05 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-06 00:00:00 -1000",
+            "qty": 0
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-09 00:00:00 -1000"
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-10 00:00:00 -1000"
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-11 00:00:00 -1000"
+          },
+          {
+            "qty": 3,
+            "date": "2025-01-12 00:00:00 -1000"
+          },
+          {
+            "qty": 0,
+            "date": "2025-01-13 00:00:00 -1000"
+          },
+          {
+            "qty": 1,
+            "date": "2025-01-17 00:00:00 -1000"
+          }
+        ],
+        "name": "walking_asymmetry_percentage",
+        "units": "%"
+      },
+      {
+        "data": [
+          {
+            "qty": 64.518585108332204,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "qty": 76.626974910423428,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 71.338186051933135
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 84.852765223668968
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 72.774617300145735
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 60.641202114598116
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 71.683818014070795
+          },
+          {
+            "qty": 69.787872239835693,
+            "date": "2024-11-01 00:00:00 -1000"
+          },
+          {
+            "qty": 62.249581336547557,
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-03 00:00:00 -1000",
+            "qty": 69.727767570808069
+          },
+          {
+            "qty": 57.029053938048627,
+            "date": "2024-11-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 67.038955476498472
+          },
+          {
+            "date": "2024-11-06 00:00:00 -1000",
+            "qty": 56.623530235317226
+          },
+          {
+            "qty": 55.14490569819516,
+            "date": "2024-11-07 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 58.651073498043026
+          },
+          {
+            "qty": 57.572114759491193,
+            "date": "2024-11-09 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 75.215911002933126
+          },
+          {
+            "qty": 63.780970326817396,
+            "date": "2024-11-11 00:00:00 -1000"
+          },
+          {
+            "qty": 51.976480903805744,
+            "date": "2024-11-12 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 60.43983095391647
+          },
+          {
+            "date": "2024-11-14 00:00:00 -1000",
+            "qty": 56.548739673313833
+          },
+          {
+            "date": "2024-11-17 00:00:00 -1000",
+            "qty": 62.670995487999114
+          },
+          {
+            "qty": 65.554003354871398,
+            "date": "2024-11-18 00:00:00 -1000"
+          },
+          {
+            "qty": 64.246634516480071,
+            "date": "2024-11-19 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 66.475229955722796
+          },
+          {
+            "date": "2024-11-21 00:00:00 -1000",
+            "qty": 61.340019187754024
+          },
+          {
+            "date": "2024-11-22 00:00:00 -1000",
+            "qty": 59.81854646717197
+          },
+          {
+            "date": "2024-11-23 00:00:00 -1000",
+            "qty": 54.757551199188264
+          },
+          {
+            "date": "2024-11-24 00:00:00 -1000",
+            "qty": 63.821372720327332
+          },
+          {
+            "qty": 67.403230577871341,
+            "date": "2024-11-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-27 00:00:00 -1000",
+            "qty": 62.818155495035079
+          },
+          {
+            "date": "2024-11-28 00:00:00 -1000",
+            "qty": 66.643017955766211
+          },
+          {
+            "date": "2024-11-29 00:00:00 -1000",
+            "qty": 68.654320181834876
+          },
+          {
+            "date": "2024-11-30 00:00:00 -1000",
+            "qty": 66.030054942369347
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 54.33346602780572
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 58.269075895789378
+          },
+          {
+            "qty": 72.08162966056058,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 70.544340078602502
+          },
+          {
+            "qty": 58.25323486328125,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-09 00:00:00 -1000",
+            "qty": 66.924842007716009
+          },
+          {
+            "qty": 58.633152008056641,
+            "date": "2024-12-10 00:00:00 -1000"
+          },
+          {
+            "qty": 68.65023478341962,
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "qty": 69.070938110351562,
+            "date": "2024-12-13 00:00:00 -1000"
+          },
+          {
+            "qty": 59.708558765697163,
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "qty": 62.036197662353516,
+            "date": "2024-12-15 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 67.807352479519011
+          },
+          {
+            "qty": 56.50118745560647,
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "qty": 66.830358183905361,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 61.323233351224701
+          },
+          {
+            "qty": 64.571341129061395,
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 68.003062526403838
+          },
+          {
+            "qty": 65.997002065085553,
+            "date": "2024-12-22 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-23 00:00:00 -1000",
+            "qty": 69.250660177216204
+          },
+          {
+            "qty": 64.01960647430721,
+            "date": "2024-12-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-25 00:00:00 -1000",
+            "qty": 74.869012623830358
+          },
+          {
+            "qty": 72.789090106870859,
+            "date": "2024-12-26 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-27 00:00:00 -1000",
+            "qty": 55.124694628510959
+          },
+          {
+            "date": "2024-12-28 00:00:00 -1000",
+            "qty": 54.355879651891328
+          },
+          {
+            "date": "2024-12-29 00:00:00 -1000",
+            "qty": 60.1671142578125
+          },
+          {
+            "date": "2024-12-30 00:00:00 -1000",
+            "qty": 62.756891605419746
+          },
+          {
+            "date": "2024-12-31 00:00:00 -1000",
+            "qty": 55.11855764419149
+          },
+          {
+            "date": "2025-01-01 00:00:00 -1000",
+            "qty": 70.458181531455324
+          },
+          {
+            "qty": 67.914178673968124,
+            "date": "2025-01-02 00:00:00 -1000"
+          },
+          {
+            "qty": 70.047611425881982,
+            "date": "2025-01-04 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-05 00:00:00 -1000",
+            "qty": 77.168321764684194
+          },
+          {
+            "date": "2025-01-07 00:00:00 -1000",
+            "qty": 62.988496106539905
+          },
+          {
+            "date": "2025-01-08 00:00:00 -1000",
+            "qty": 67.890178679703212
+          },
+          {
+            "date": "2025-01-10 00:00:00 -1000",
+            "qty": 58.095584117768055
+          },
+          {
+            "date": "2025-01-11 00:00:00 -1000",
+            "qty": 72.042102428856765
+          },
+          {
+            "qty": 62.848079043857346,
+            "date": "2025-01-12 00:00:00 -1000"
+          },
+          {
+            "qty": 65.914219414593646,
+            "date": "2025-01-13 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-14 00:00:00 -1000",
+            "qty": 68.232545500243177
+          },
+          {
+            "date": "2025-01-15 00:00:00 -1000",
+            "qty": 66.743860093952961
+          },
+          {
+            "qty": 66.076080061165769,
+            "date": "2025-01-16 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-17 00:00:00 -1000",
+            "qty": 60.42497337372545
+          },
+          {
+            "qty": 62.518264759777161,
+            "date": "2025-01-18 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-19 00:00:00 -1000",
+            "qty": 60.574588138142722
+          }
+        ],
+        "units": "dBASPL",
+        "name": "headphone_audio_exposure"
+      },
+      {
+        "units": "in",
+        "data": [
+          {
+            "date": "2024-10-21 00:00:00 -1000",
+            "qty": 28.051181102362207
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "qty": 26.664280601288478
+          },
+          {
+            "qty": 26.587106299212593,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "qty": 25.994346860488591,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 27.038807649043871
+          },
+          {
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 25.678040244969381
+          },
+          {
+            "qty": 27.12160979877515,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "qty": 29.573876794812413,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "qty": 25.590551181102363,
+            "date": "2024-10-30 00:00:00 -1000"
+          },
+          {
+            "qty": 28.847530422333573,
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 24.371953505811774
+          },
+          {
+            "date": "2024-11-02 00:00:00 -1000",
+            "qty": 26.030031129829705
+          },
+          {
+            "qty": 21.062992125984252,
+            "date": "2024-11-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 26.115485564304464
+          },
+          {
+            "qty": 29.133858267716537,
+            "date": "2024-11-06 00:00:00 -1000"
+          },
+          {
+            "qty": 24.015748031496059,
+            "date": "2024-11-07 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 24.874731567644957
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 23.021135515955248
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 29.041222788327929
+          },
+          {
+            "date": "2024-11-11 00:00:00 -1000",
+            "qty": 26.377952755905515
+          },
+          {
+            "qty": 21.522309711286088,
+            "date": "2024-11-12 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 25.72178477690289
+          },
+          {
+            "qty": 24.440944881889763,
+            "date": "2024-11-14 00:00:00 -1000"
+          },
+          {
+            "qty": 27.42782152230971,
+            "date": "2024-11-15 00:00:00 -1000"
+          },
+          {
+            "qty": 24.131542380731826,
+            "date": "2024-11-16 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-17 00:00:00 -1000",
+            "qty": 22.096456692913385
+          },
+          {
+            "date": "2024-11-18 00:00:00 -1000",
+            "qty": 23.959505061867269
+          },
+          {
+            "date": "2024-11-19 00:00:00 -1000",
+            "qty": 25.021872265966756
+          },
+          {
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 24.465691788526438
+          },
+          {
+            "date": "2024-11-21 00:00:00 -1000",
+            "qty": 25.328083989501312
+          },
+          {
+            "date": "2024-11-22 00:00:00 -1000",
+            "qty": 26.650514839491223
+          },
+          {
+            "qty": 27.221597300337457,
+            "date": "2024-11-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-24 00:00:00 -1000",
+            "qty": 19.291338582677167
+          },
+          {
+            "date": "2024-11-25 00:00:00 -1000",
+            "qty": 27.296587926509186
+          },
+          {
+            "date": "2024-11-26 00:00:00 -1000",
+            "qty": 28.477690288713916
+          },
+          {
+            "qty": 23.801780212256073,
+            "date": "2024-11-27 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-29 00:00:00 -1000",
+            "qty": 26.299212598425196
+          },
+          {
+            "date": "2024-11-30 00:00:00 -1000",
+            "qty": 25.984251968503937
+          },
+          {
+            "date": "2024-12-01 00:00:00 -1000",
+            "qty": 28.444881889763778
+          },
+          {
+            "qty": 27.129563350035799,
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "qty": 25.295275590551185,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 29.037441748352887
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 26.515748031496067
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 25.570866141732289
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 23.928258967629048
+          },
+          {
+            "qty": 27.080989876265466,
+            "date": "2024-12-09 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-10 00:00:00 -1000",
+            "qty": 23.458005249343831
+          },
+          {
+            "qty": 25.246062992125982,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "qty": 28.675879800739189,
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "qty": 27.109111361079869,
+            "date": "2024-12-13 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-14 00:00:00 -1000",
+            "qty": 23.143982002249722
+          },
+          {
+            "qty": 24.212598425196852,
+            "date": "2024-12-15 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 25.674915635545556
+          },
+          {
+            "date": "2024-12-17 00:00:00 -1000",
+            "qty": 25.984251968503933
+          },
+          {
+            "qty": 26.00811262228585,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "qty": 27.336528586100652,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 27.8740157480315
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 25.590551181102363
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 27.742042808029286
+          },
+          {
+            "qty": 26.546681664791901,
+            "date": "2024-12-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-24 00:00:00 -1000",
+            "qty": 27.502812148481443
+          },
+          {
+            "qty": 26.013414989792949,
+            "date": "2024-12-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-26 00:00:00 -1000",
+            "qty": 26.127415891195422
+          },
+          {
+            "qty": 25.262467191601051,
+            "date": "2024-12-27 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-28 00:00:00 -1000",
+            "qty": 24.409448818897641
+          },
+          {
+            "qty": 24.015748031496063,
+            "date": "2024-12-29 00:00:00 -1000"
+          },
+          {
+            "qty": 24.753937007874018,
+            "date": "2024-12-30 00:00:00 -1000"
+          },
+          {
+            "qty": 29.330708661417326,
+            "date": "2025-01-01 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-02 00:00:00 -1000",
+            "qty": 18.503937007874015
+          },
+          {
+            "date": "2025-01-03 00:00:00 -1000",
+            "qty": 26.673228346456693
+          },
+          {
+            "date": "2025-01-04 00:00:00 -1000",
+            "qty": 23.228346456692915
+          },
+          {
+            "qty": 24.901574803149607,
+            "date": "2025-01-05 00:00:00 -1000"
+          },
+          {
+            "qty": 26.476377952755904,
+            "date": "2025-01-06 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-09 00:00:00 -1000",
+            "qty": 29.527559055118111
+          },
+          {
+            "qty": 26.968503937007878,
+            "date": "2025-01-10 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-11 00:00:00 -1000",
+            "qty": 27.952755905511811
+          },
+          {
+            "date": "2025-01-12 00:00:00 -1000",
+            "qty": 23.464566929133859
+          },
+          {
+            "date": "2025-01-13 00:00:00 -1000",
+            "qty": 27.690288713910764
+          },
+          {
+            "qty": 25.421822272215973,
+            "date": "2025-01-17 00:00:00 -1000"
+          },
+          {
+            "qty": 20.472440944881892,
+            "date": "2025-01-19 00:00:00 -1000"
+          }
+        ],
+        "name": "walking_step_length"
+      },
+      {
+        "name": "walking_double_support_percentage",
+        "data": [
+          {
+            "qty": 28.3125,
+            "date": "2024-10-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "qty": 29.360000000000003
+          },
+          {
+            "qty": 29.578571428571433,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "qty": 29.191428571428574,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 28.955555555555552
+          },
+          {
+            "qty": 29.288888888888884,
+            "date": "2024-10-26 00:00:00 -1000"
+          },
+          {
+            "qty": 28.614285714285717,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 28.712500000000002
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 29.524999999999995
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 28.045454545454547
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 30.41578947368421
+          },
+          {
+            "qty": 29.24871794871795,
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "qty": 30.25,
+            "date": "2024-11-04 00:00:00 -1000"
+          },
+          {
+            "qty": 29.022222222222226,
+            "date": "2024-11-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 29.649999999999999
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 28.111111111111111
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 31.010526315789477
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 28.006250000000001
+          },
+          {
+            "qty": 28.600000000000001,
+            "date": "2024-11-11 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-12 00:00:00 -1000",
+            "qty": 28.600000000000005
+          },
+          {
+            "qty": 29.099999999999998,
+            "date": "2024-11-13 00:00:00 -1000"
+          },
+          {
+            "qty": 29.952173913043477,
+            "date": "2024-11-14 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-15 00:00:00 -1000",
+            "qty": 29.033333333333331
+          },
+          {
+            "date": "2024-11-16 00:00:00 -1000",
+            "qty": 30.275862068965527
+          },
+          {
+            "qty": 30.5,
+            "date": "2024-11-17 00:00:00 -1000"
+          },
+          {
+            "qty": 29.580000000000002,
+            "date": "2024-11-18 00:00:00 -1000"
+          },
+          {
+            "qty": 29.349999999999998,
+            "date": "2024-11-19 00:00:00 -1000"
+          },
+          {
+            "qty": 29.228571428571431,
+            "date": "2024-11-20 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-21 00:00:00 -1000",
+            "qty": 29
+          },
+          {
+            "date": "2024-11-22 00:00:00 -1000",
+            "qty": 29.30952380952381
+          },
+          {
+            "qty": 29.385714285714293,
+            "date": "2024-11-23 00:00:00 -1000"
+          },
+          {
+            "qty": 28.166666666666671,
+            "date": "2024-11-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-26 00:00:00 -1000",
+            "qty": 27.366666666666671
+          },
+          {
+            "date": "2024-11-27 00:00:00 -1000",
+            "qty": 30.090000000000014
+          },
+          {
+            "date": "2024-11-29 00:00:00 -1000",
+            "qty": 28.760000000000002
+          },
+          {
+            "qty": 28.300000000000001,
+            "date": "2024-11-30 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-01 00:00:00 -1000",
+            "qty": 29.287499999999998
+          },
+          {
+            "qty": 29.010526315789477,
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 29.675000000000001
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 28.408510638297876
+          },
+          {
+            "qty": 29.745000000000005,
+            "date": "2024-12-06 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 29.61666666666666
+          },
+          {
+            "qty": 29.763636363636362,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "qty": 28.578571428571429,
+            "date": "2024-12-09 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-10 00:00:00 -1000",
+            "qty": 29.783333333333335
+          },
+          {
+            "qty": 29.087500000000002,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 28.695555555555565
+          },
+          {
+            "qty": 28.928571428571427,
+            "date": "2024-12-13 00:00:00 -1000"
+          },
+          {
+            "qty": 30.176923076923078,
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "qty": 29.75,
+            "date": "2024-12-15 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 29.383333333333329
+          },
+          {
+            "qty": 29.226315789473688,
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "qty": 30.10153846153845,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "qty": 28.432608695652185,
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 29.142857142857149
+          },
+          {
+            "qty": 29.912499999999998,
+            "date": "2024-12-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 30.18714285714287
+          },
+          {
+            "date": "2024-12-23 00:00:00 -1000",
+            "qty": 29.144999999999992
+          },
+          {
+            "qty": 29.542857142857144,
+            "date": "2024-12-24 00:00:00 -1000"
+          },
+          {
+            "qty": 29.995833333333334,
+            "date": "2024-12-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-26 00:00:00 -1000",
+            "qty": 29.266666666666669
+          },
+          {
+            "date": "2024-12-27 00:00:00 -1000",
+            "qty": 30.200000000000003
+          },
+          {
+            "qty": 29.966666666666669,
+            "date": "2024-12-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-29 00:00:00 -1000",
+            "qty": 32.299999999999997
+          },
+          {
+            "date": "2024-12-30 00:00:00 -1000",
+            "qty": 30.650000000000002
+          },
+          {
+            "date": "2025-01-01 00:00:00 -1000",
+            "qty": 27.950000000000003
+          },
+          {
+            "date": "2025-01-02 00:00:00 -1000",
+            "qty": 30.300000000000001
+          },
+          {
+            "qty": 29.074999999999999,
+            "date": "2025-01-03 00:00:00 -1000"
+          },
+          {
+            "qty": 29.799999999999997,
+            "date": "2025-01-04 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-05 00:00:00 -1000",
+            "qty": 29.225000000000001
+          },
+          {
+            "date": "2025-01-06 00:00:00 -1000",
+            "qty": 29.149999999999999
+          },
+          {
+            "date": "2025-01-09 00:00:00 -1000",
+            "qty": 28.299999999999997
+          },
+          {
+            "qty": 29.299999999999997,
+            "date": "2025-01-10 00:00:00 -1000"
+          },
+          {
+            "qty": 29.300000000000001,
+            "date": "2025-01-11 00:00:00 -1000"
+          },
+          {
+            "qty": 29.739999999999998,
+            "date": "2025-01-12 00:00:00 -1000"
+          },
+          {
+            "qty": 29.166666666666668,
+            "date": "2025-01-13 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-17 00:00:00 -1000",
+            "qty": 28.985714285714288
+          },
+          {
+            "date": "2025-01-19 00:00:00 -1000",
+            "qty": 30.699999999999999
+          }
+        ],
+        "units": "%"
+      },
+      {
+        "data": [
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 94
+          },
+          {
+            "qty": 99,
+            "date": "2024-12-06 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 96
+          },
+          {
+            "qty": 97,
+            "date": "2024-12-18 00:00:00 -1000"
+          },
+          {
+            "qty": 95.5,
+            "date": "2024-12-20 00:00:00 -1000"
+          }
+        ],
+        "units": "%",
+        "name": "blood_oxygen_saturation"
+      },
+      {
+        "data": [
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 0.86836027973905949
+          },
+          {
+            "qty": 1.5672213175478258,
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 1.2498419350526464
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 1.2203217960718109
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 1.4680645519041324
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 1.1849439460930862
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 1.1228281378824252
+          }
+        ],
+        "units": "ft/s",
+        "name": "stair_speed_up"
+      },
+      {
+        "units": "ft/s",
+        "data": [
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 1.3153092676573224
+          },
+          {
+            "qty": 1.4726702231434698,
+            "date": "2024-12-06 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 0.84559098277192091
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 1.1371058262786842
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 1.0064439090296353
+          }
+        ],
+        "name": "stair_speed_down"
+      },
+      {
+        "name": "running_stride_length",
+        "units": "m",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 1.2086956521739132
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 1.2817499999999999
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 1.2748523206751046
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 1.2059479553903352
+          },
+          {
+            "qty": 1.2597142857142858,
+            "date": "2024-10-29 00:00:00 -1000"
+          }
+        ]
+      },
+      {
+        "units": "mi/hr",
+        "name": "running_speed",
+        "data": [
+          {
+            "qty": 5.9361650889964386,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 5.3483315326599854
+          },
+          {
+            "qty": 4.666219556304692,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 4.6270914144499944
+          },
+          {
+            "qty": 5.0398198863399086,
+            "date": "2024-10-29 00:00:00 -1000"
+          }
+        ]
+      },
+      {
+        "name": "time_in_daylight",
+        "units": "min",
+        "data": [
+          {
+            "qty": 75,
+            "date": "2024-10-23 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 57,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 45,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 58,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 64,
+            "date": "2024-10-31 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "qty": 104,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "qty": 103,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "qty": 200,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 96,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "source": "Apple Watch de Jason",
+            "qty": 81
+          },
+          {
+            "qty": 73,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 188,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "date": "2024-12-16 00:00:00 -1000",
+            "qty": 85,
+            "source": "Apple Watch de Jason"
+          },
+          {
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 204
+          },
+          {
+            "qty": 175,
+            "source": "Apple Watch de Jason",
+            "date": "2024-12-19 00:00:00 -1000"
+          },
+          {
+            "qty": 190,
+            "date": "2024-12-20 00:00:00 -1000",
+            "source": "Apple Watch de Jason"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 11.687142857142858
+          },
+          {
+            "qty": 11.483203124999999,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "qty": 11.548387096774192,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 11.476277372262778
+          },
+          {
+            "qty": 11.266666666666666,
+            "date": "2024-10-29 00:00:00 -1000"
+          }
+        ],
+        "name": "running_vertical_oscillation",
+        "units": "cm"
+      },
+      {
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 220.76735459662288
+          },
+          {
+            "qty": 197.08402860548273,
+            "date": "2024-10-24 00:00:00 -1000"
+          },
+          {
+            "qty": 167.45277777777778,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 169.69468599033817
+          },
+          {
+            "qty": 184.42933333333335,
+            "date": "2024-10-29 00:00:00 -1000"
+          }
+        ],
+        "units": "W",
+        "name": "running_power"
+      },
+      {
+        "units": "ms",
+        "data": [
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 280.626213592233
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 279.61666666666667
+          },
+          {
+            "qty": 276.43514644351467,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "qty": 276.44237918215612,
+            "date": "2024-10-28 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-29 00:00:00 -1000",
+            "qty": 267.23222748815164
+          }
+        ],
+        "name": "running_ground_contact_time"
+      },
+      {
+        "units": "mi/hr",
+        "data": [
+          {
+            "qty": 2.8437052612741582,
+            "date": "2024-10-21 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-22 00:00:00 -1000",
+            "qty": 2.6680549228867054
+          },
+          {
+            "date": "2024-10-23 00:00:00 -1000",
+            "qty": 2.5368255637079464
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 2.5139722482242175
+          },
+          {
+            "qty": 2.7011005726556907,
+            "date": "2024-10-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 2.6221864312415488
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 2.7265767915374215
+          },
+          {
+            "qty": 2.7869594509242499,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-30 00:00:00 -1000",
+            "qty": 2.4382605583392984
+          },
+          {
+            "qty": 2.9920717554933733,
+            "date": "2024-10-31 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 2.2763489791048848
+          },
+          {
+            "qty": 2.4986058164505334,
+            "date": "2024-11-02 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-04 00:00:00 -1000",
+            "qty": 2.2481209735146743
+          },
+          {
+            "date": "2024-11-05 00:00:00 -1000",
+            "qty": 2.7390042153821677
+          },
+          {
+            "qty": 1.789549033643522,
+            "date": "2024-11-06 00:00:00 -1000"
+          },
+          {
+            "qty": 2.4402941367866204,
+            "date": "2024-11-07 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-08 00:00:00 -1000",
+            "qty": 2.4789321272857419
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 2.0744640771578191
+          },
+          {
+            "qty": 2.9395974567350196,
+            "date": "2024-11-10 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-11 00:00:00 -1000",
+            "qty": 2.7514316392269147
+          },
+          {
+            "qty": 2.2443927463612501,
+            "date": "2024-11-12 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-13 00:00:00 -1000",
+            "qty": 2.5202815557146265
+          },
+          {
+            "date": "2024-11-14 00:00:00 -1000",
+            "qty": 2.3532569792412303
+          },
+          {
+            "date": "2024-11-15 00:00:00 -1000",
+            "qty": 2.7812574564543069
+          },
+          {
+            "date": "2024-11-16 00:00:00 -1000",
+            "qty": 2.1421954608615099
+          },
+          {
+            "date": "2024-11-17 00:00:00 -1000",
+            "qty": 2.2089745884037222
+          },
+          {
+            "date": "2024-11-18 00:00:00 -1000",
+            "qty": 2.2880662644442173
+          },
+          {
+            "date": "2024-11-19 00:00:00 -1000",
+            "qty": 2.5202815557146265
+          },
+          {
+            "date": "2024-11-20 00:00:00 -1000",
+            "qty": 2.5309336332958381
+          },
+          {
+            "date": "2024-11-21 00:00:00 -1000",
+            "qty": 2.5314662371748988
+          },
+          {
+            "qty": 2.6301208633885791,
+            "date": "2024-11-22 00:00:00 -1000"
+          },
+          {
+            "qty": 2.6843235504652827,
+            "date": "2024-11-23 00:00:00 -1000"
+          },
+          {
+            "qty": 1.4763779527559056,
+            "date": "2024-11-24 00:00:00 -1000"
+          },
+          {
+            "qty": 2.9229300882844185,
+            "date": "2024-11-25 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-26 00:00:00 -1000",
+            "qty": 3.0422333571939872
+          },
+          {
+            "date": "2024-11-27 00:00:00 -1000",
+            "qty": 2.2641685599576733
+          },
+          {
+            "date": "2024-11-29 00:00:00 -1000",
+            "qty": 2.7469577666428058
+          },
+          {
+            "date": "2024-11-30 00:00:00 -1000",
+            "qty": 2.8912401574803148
+          },
+          {
+            "date": "2024-12-01 00:00:00 -1000",
+            "qty": 2.6479733357193984
+          },
+          {
+            "date": "2024-12-03 00:00:00 -1000",
+            "qty": 2.6436519815188393
+          },
+          {
+            "qty": 2.4997763063707947,
+            "date": "2024-12-04 00:00:00 -1000"
+          },
+          {
+            "qty": 2.8883869224139196,
+            "date": "2024-12-05 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 2.5534627773801004
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 2.4885916249105229
+          },
+          {
+            "date": "2024-12-08 00:00:00 -1000",
+            "qty": 2.3344915692356638
+          },
+          {
+            "date": "2024-12-09 00:00:00 -1000",
+            "qty": 2.8057572348910935
+          },
+          {
+            "date": "2024-12-10 00:00:00 -1000",
+            "qty": 2.5762049630159871
+          },
+          {
+            "qty": 2.6927120615604863,
+            "date": "2024-12-11 00:00:00 -1000"
+          },
+          {
+            "qty": 2.8098658933867036,
+            "date": "2024-12-12 00:00:00 -1000"
+          },
+          {
+            "qty": 2.7194754064832805,
+            "date": "2024-12-13 00:00:00 -1000"
+          },
+          {
+            "qty": 2.4686189794457509,
+            "date": "2024-12-14 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-15 00:00:00 -1000",
+            "qty": 2.4494452397995707
+          },
+          {
+            "qty": 2.4957817772778408,
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-17 00:00:00 -1000",
+            "qty": 2.5748314056436725
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 2.3894546756035666
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 2.7494864772338241
+          },
+          {
+            "date": "2024-12-20 00:00:00 -1000",
+            "qty": 2.6370993398552449
+          },
+          {
+            "qty": 2.3835798934224131,
+            "date": "2024-12-21 00:00:00 -1000"
+          },
+          {
+            "qty": 2.5573537862824773,
+            "date": "2024-12-22 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-23 00:00:00 -1000",
+            "qty": 2.5575638272488663
+          },
+          {
+            "date": "2024-12-24 00:00:00 -1000",
+            "qty": 2.7098885366601904
+          },
+          {
+            "date": "2024-12-25 00:00:00 -1000",
+            "qty": 2.4241761446485861
+          },
+          {
+            "date": "2024-12-26 00:00:00 -1000",
+            "qty": 2.4667306566018086
+          },
+          {
+            "date": "2024-12-27 00:00:00 -1000",
+            "qty": 2.4569016941064183
+          },
+          {
+            "qty": 2.3935218324982106,
+            "date": "2024-12-28 00:00:00 -1000"
+          },
+          {
+            "qty": 1.8119183965640659,
+            "date": "2024-12-29 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-30 00:00:00 -1000",
+            "qty": 2.3180252326413746
+          },
+          {
+            "qty": 2.9751252684323553,
+            "date": "2025-01-01 00:00:00 -1000"
+          },
+          {
+            "qty": 2.4829992841803867,
+            "date": "2025-01-02 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-03 00:00:00 -1000",
+            "qty": 2.5445150322118826
+          },
+          {
+            "qty": 1.9796886184681461,
+            "date": "2025-01-04 00:00:00 -1000"
+          },
+          {
+            "qty": 2.7178775948460991,
+            "date": "2025-01-05 00:00:00 -1000"
+          },
+          {
+            "qty": 2.6395848246241949,
+            "date": "2025-01-06 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-09 00:00:00 -1000",
+            "qty": 3.0757874015748032
+          },
+          {
+            "date": "2025-01-10 00:00:00 -1000",
+            "qty": 2.7439751849200671
+          },
+          {
+            "qty": 2.6917800047721308,
+            "date": "2025-01-11 00:00:00 -1000"
+          },
+          {
+            "qty": 2.5232641374373657,
+            "date": "2025-01-12 00:00:00 -1000"
+          },
+          {
+            "qty": 2.6843235504652827,
+            "date": "2025-01-13 00:00:00 -1000"
+          },
+          {
+            "date": "2025-01-17 00:00:00 -1000",
+            "qty": 2.658758564270375
+          },
+          {
+            "date": "2025-01-19 00:00:00 -1000",
+            "qty": 2.0803507516105944
+          }
+        ],
+        "name": "walking_speed"
+      },
+      {
+        "name": "physical_effort",
+        "data": [
+          {
+            "qty": 5.6590909139676526,
+            "date": "2024-10-23 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-24 00:00:00 -1000",
+            "qty": 6.5700564835704656
+          },
+          {
+            "date": "2024-10-25 00:00:00 -1000",
+            "qty": 5.4351851702840239
+          },
+          {
+            "date": "2024-10-26 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-10-27 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-10-28 00:00:00 -1000",
+            "qty": 3.523931628618485
+          },
+          {
+            "qty": 3.3523315975703105,
+            "date": "2024-10-29 00:00:00 -1000"
+          },
+          {
+            "qty": 1.0042372881355932,
+            "date": "2024-10-30 00:00:00 -1000"
+          },
+          {
+            "date": "2024-10-31 00:00:00 -1000",
+            "qty": 3.0163424186669436
+          },
+          {
+            "date": "2024-11-01 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-11-02 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-11-03 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "date": "2024-11-04 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 1,
+            "date": "2024-11-05 00:00:00 -1000"
+          },
+          {
+            "qty": 1,
+            "date": "2024-11-06 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-07 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 1,
+            "date": "2024-11-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-09 00:00:00 -1000",
+            "qty": 1.0191011241312777
+          },
+          {
+            "date": "2024-11-10 00:00:00 -1000",
+            "qty": 1
+          },
+          {
+            "qty": 1,
+            "date": "2024-11-11 00:00:00 -1000"
+          },
+          {
+            "date": "2024-11-12 00:00:00 -1000",
+            "qty": 1.1520000076293946
+          },
+          {
+            "qty": 1,
+            "date": "2024-11-13 00:00:00 -1000"
+          },
+          {
+            "qty": 4.3232931645519761,
+            "date": "2024-12-03 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-04 00:00:00 -1000",
+            "qty": 4.0680250669347826
+          },
+          {
+            "date": "2024-12-05 00:00:00 -1000",
+            "qty": 3.8918994168995478
+          },
+          {
+            "date": "2024-12-06 00:00:00 -1000",
+            "qty": 4.6722021554781641
+          },
+          {
+            "date": "2024-12-07 00:00:00 -1000",
+            "qty": 1.1146341416893937
+          },
+          {
+            "qty": 3.4313868327732502,
+            "date": "2024-12-08 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-11 00:00:00 -1000",
+            "qty": 3.7377777726561936
+          },
+          {
+            "date": "2024-12-12 00:00:00 -1000",
+            "qty": 3.8825925955065976
+          },
+          {
+            "qty": 4.0943038146707078,
+            "date": "2024-12-16 00:00:00 -1000"
+          },
+          {
+            "qty": 1,
+            "date": "2024-12-17 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-18 00:00:00 -1000",
+            "qty": 4.1740963836032225
+          },
+          {
+            "date": "2024-12-19 00:00:00 -1000",
+            "qty": 4.4709897655675839
+          },
+          {
+            "qty": 4.3449685599818917,
+            "date": "2024-12-20 00:00:00 -1000"
+          },
+          {
+            "date": "2024-12-21 00:00:00 -1000",
+            "qty": 1.0009523811794463
+          },
+          {
+            "date": "2024-12-22 00:00:00 -1000",
+            "qty": 4.1107462811825881
+          }
+        ],
+        "units": "kcal/hr·kg"
+      }
+    ]
+  }
+}
