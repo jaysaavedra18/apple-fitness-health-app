@@ -7,7 +7,41 @@ import (
 	"strings"
 )
 
+type Root struct {
+	Data WorkoutData `json:"data"`
+}
 
+type WorkoutData struct {
+	Workouts []Workout `json:"workouts"`
+}
+type Workout struct {
+	ID       string  `json:"id"`
+	Name     string  `json:"name"`
+	Start    string  `json:"start"`
+	End      string  `json:"end"`
+	Duration float64 `json:"duration"`
+	Distance struct {
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
+	} `json:"distance"`
+	ActiveEnergyBurned struct {
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
+	} `json:"activeEnergyBurned"`
+	Intensity struct {
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
+	} `json:"intensity"`
+	Location string `json:"location"`
+	Humidity struct {
+		Units string `json:"units"`
+		Qty   int64  `json:"qty"`
+	} `json:"humidity"`
+	Temperature struct {
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
+	} `json:"temperature"`
+}
 
 func main() {
 	// Open the directory (iCloud Drive)
@@ -21,23 +55,22 @@ func main() {
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
 			filePath := dirPath + "/" + file.Name()
+			fmt.Printf("File: %s\n", filePath)
 
 			content, err := os.ReadFile(filePath)
 			if err != nil {
 				panic(err)
 			}
 
-			var jsonData map[string]interface{}
-			err = json.Unmarshal(content, &jsonData)
+			var root Root
+			err = json.Unmarshal(content, &root)
 			if err != nil {
 				panic(err)
 			}
 
-			fmt.Println("Fields (keys):")
-			for key := range jsonData {
-				fmt.Println(key)
+			for _, workout := range root.Data.Workouts {
+				fmt.Printf("Workout: %+v\n", workout)
 			}
-
 
 		}
 	}
