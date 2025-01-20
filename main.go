@@ -48,10 +48,12 @@ type Workout struct {
 	} `json:"lapLength,omitempty"`
 }
 type Metric struct {
+	Name string `json:"name"`
 	Data []struct {
 		Date string  `json:"date"`
 		Qty  float64 `json:"qty"`
 	} `json:"data"`
+	Units string `json:"units"`
 }
 
 func main() {
