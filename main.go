@@ -6,16 +6,17 @@ import (
 	"os"
 	"regexp"
 	"strings"
+	"time"
 )
 
 type Root struct {
-	Data Data `json:"data"`
+	Data        Data    `json:"data"`
+	LastUpdated *string `json:"lastUpdated"`
 }
 
 type Data struct {
 	Workouts []Workout `json:"workouts"`
 	Metrics  []Metric  `json:"metrics"`
-	// LastUpdate *string   `json:"lastUpdate,omitempty"`
 }
 type Workout struct {
 	ID       string    `json:"id"`
@@ -67,25 +68,55 @@ func main() {
 		panic(err)
 	}
 
+	data, err := os.ReadFile("cache.json")
+	if err != nil {
+		panic(err)
+	}
+
+	var root Root
+	err = json.Unmarshal(data, &root)
+	if err != nil {
+		panic(err)
+	}
+
+	lastUpdated := *root.LastUpdated
+
 	// Aggregate all the data
 	var allWorkouts []Workout
 	var allMetrics []Metric
 
 	// Sift through the files for json files
-	var lastDate string
+	var thisDate string
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
 			// Extract the date from the filename
 			re := regexp.MustCompile(`\d{4}-\d{2}-\d{2}`)
 			matches := re.FindAllString(file.Name(), -1)
 			if len(matches) > 0 {
-				lastDate = matches[len(matches)-1]
-				fmt.Println("Extracted Date:", lastDate)
+				thisDate = matches[len(matches)-1]
+				fmt.Println("Extracted Date:", thisDate)
 			} else {
 				fmt.Println("No date found in filename")
 			}
 
 			// Compare file date to last cache update
+			lastUpdatedTime, err := time.Parse("2006-01-02", lastUpdated)
+			if err != nil {
+				panic(err)
+			}
+			thisDateTime, err := time.Parse("2006-01-02", thisDate)
+			if err != nil {
+				panic(err)
+			}
+
+			// Compare the dates
+			if lastUpdatedTime.Before(thisDateTime) {
+				fmt.Printf("The file date %s is more recent. Updating the cache.\n", thisDateTime)
+			} else if lastUpdatedTime.After(thisDateTime) {
+				fmt.Printf("The file date %s is older. No update needed.\n", thisDateTime)
+			} else {
+				fmt.Println("The file date is the same as the local cache date. No update needed.")
+			}
 
 			// Read file data
 			filePath := dirPath + "/" + file.Name()
@@ -103,11 +134,10 @@ func main() {
 			allWorkouts = append(allWorkouts, root.Data.Workouts...)
 			allMetrics = append(allMetrics, root.Data.Metrics...)
 
-
 		}
 	}
 
-	writeToCache(allWorkouts, allMetrics)
+	// writeToCache(allWorkouts, allMetrics)
 
 }
 
