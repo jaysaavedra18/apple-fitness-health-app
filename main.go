@@ -69,11 +69,78 @@ func loadCache(filename string) (*HealthData, error) {
 	}
 
 	var cache HealthData
-	err = json.Unmarshal(data, &cache)
-	if err != nil {
+	if err := json.Unmarshal(data, &cache); err != nil {
 		return nil, err
 	}
+
+	allWorkouts = append(allWorkouts, cache.Data.Workouts...)
+	allMetrics = append(allMetrics, cache.Data.Metrics...)
+
 	return &cache, nil
+}
+
+// Load the new directory files into the program data
+func loadDirectory(directoryPath string, cacheLastUpdated string) (bool, string, error) {
+	files, err := os.ReadDir(directoryPath)
+	if err != nil {
+		return false, cacheLastUpdated, err
+	}
+
+	dataWasUpdated := false
+	latestFileDate := cacheLastUpdated
+	cacheDate, err := time.Parse(dateFormat, cacheLastUpdated)
+	if err != nil {
+		return false, cacheLastUpdated, err
+	}
+
+	for _, file := range files {
+		if !strings.HasSuffix(file.Name(), ".json") {
+			continue
+		}
+
+		// Extract date from filename
+		re := regexp.MustCompile(dateRegexPattern)
+		matches := re.FindAllString(file.Name(), -1)
+		if len(matches) == 0 {
+			continue
+		}
+		fileDate := matches[len(matches)-1]
+
+		// Parse and compare dates
+		currentFileDate, err := time.Parse(dateFormat, fileDate)
+		if err != nil {
+			continue
+		}
+
+		// Only process files newer than our cache
+		if currentFileDate.After(cacheDate) {
+			fmt.Printf("Processing new data from: %s\n", fileDate)
+
+			// Read and parse file
+			filePath := directoryPath + "/" + file.Name()
+			content, err := os.ReadFile(filePath)
+			if err != nil {
+				continue
+			}
+
+			var fileData HealthData
+			if err := json.Unmarshal(content, &fileData); err != nil {
+				continue
+			}
+
+			// Update our data collections
+			allWorkouts = append(allWorkouts, fileData.Data.Workouts...)
+			allMetrics = append(allMetrics, fileData.Data.Metrics...)
+			dataWasUpdated = true
+
+			// Keep track of the latest file date
+			if currentFileDate.After(cacheDate) {
+				latestFileDate = fileDate
+			}
+		}
+	}
+
+	return dataWasUpdated, latestFileDate, nil
 }
 
 func main() {
@@ -81,67 +148,22 @@ func main() {
 	if err != nil {
 		panic(fmt.Sprintf("Failed to load cache: %v", err))
 	}
-	lastUpdated := *cache.LastUpdated
 
-	// Sift through the files for json files
-	files, err := os.ReadDir(iCloudDirPath)
+	// Process directory and get update status
+	wasUpdated, latestUpdate, err := loadDirectory(iCloudDirPath, *cache.LastUpdated)
 	if err != nil {
-		panic(err)
+		panic(fmt.Sprintf("Failed to load directory: %v", err))
 	}
-	var thisDate string
-	for _, file := range files {
-		if strings.HasSuffix(file.Name(), ".json") {
-			// Extract the date from the filename
-			re := regexp.MustCompile(dateRegexPattern)
-			matches := re.FindAllString(file.Name(), -1)
-			if len(matches) > 0 {
-				thisDate = matches[len(matches)-1]
-				fmt.Println("Extracted Date:", thisDate)
-			} else {
-				fmt.Println("No date found in filename")
-			}
 
-			// Compare file date to last cache update
-			cacheUpdateDate, err := time.Parse(dateFormat, lastUpdated)
-			if err != nil {
-				panic(err)
-			}
-			currentFileDate, err := time.Parse(dateFormat, thisDate)
-			if err != nil {
-				panic(err)
-			}
-
-			// Compare the dates
-			if cacheUpdateDate.Before(currentFileDate) {
-				fmt.Printf("The file date %s is more recent. Updating the cache.\n", currentFileDate)
-				lastUpdated = currentFileDate.Format(dateFormat)
-			} else if cacheUpdateDate.After(currentFileDate) {
-				fmt.Printf("The file date %s is older. No update needed.\n", currentFileDate)
-				continue
-			} else {
-				fmt.Println("The file date is the same as the local cache date. No update needed.")
-			}
-
-			// Read file data
-			filePath := iCloudDirPath + "/" + file.Name()
-			content, err := os.ReadFile(filePath)
-			if err != nil {
-				panic(err)
-			}
-
-			var healthData HealthData
-			err = json.Unmarshal(content, &healthData)
-			if err != nil {
-				panic(err)
-			}
-			// Aggregate the workouts and metrics
-			allWorkouts = append(allWorkouts, healthData.Data.Workouts...)
-			allMetrics = append(allMetrics, healthData.Data.Metrics...)
-
+	// Only write to cache if we found new data
+	if wasUpdated {
+		if err := writeToCache(allWorkouts, allMetrics, &latestUpdate); err != nil {
+			panic(fmt.Sprintf("Failed to write cache: %v", err))
 		}
+		fmt.Printf("Cache updated with data through: %s\n", latestUpdate)
+	} else {
+		fmt.Println("No new data found, cache remains current")
 	}
-
-	writeToCache(allWorkouts, allMetrics, &lastUpdated)
 }
 
 func writeToCache(allWorkouts []Workout, allMetrics []Metric, lastUpdated *string) error {
