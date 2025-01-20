@@ -8,11 +8,12 @@ import (
 )
 
 type Root struct {
-	Data WorkoutData `json:"data"`
+	Data Data `json:"data"`
 }
 
-type WorkoutData struct {
+type Data struct {
 	Workouts []Workout `json:"workouts"`
+	Metrics  []Metric  `json:"metrics"`
 }
 type Workout struct {
 	ID       string  `json:"id"`
@@ -41,6 +42,16 @@ type Workout struct {
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
 	} `json:"temperature"`
+	LapLength struct {
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
+	} `json:"lapLength"`
+}
+type Metric struct {
+	Data []struct {
+		Date string  `json:"date"`
+		Qty  float64 `json:"qty"`
+	} `json:"data"`
 }
 
 func main() {
@@ -69,7 +80,12 @@ func main() {
 			}
 
 			for _, workout := range root.Data.Workouts {
+				// Do something with all the workout data
 				fmt.Printf("Workout: %+v\n", workout)
+			}
+			for _, metric := range root.Data.Metrics {
+				// Do something with all the metrics data
+				fmt.Printf("Metric: %+v\n", metric)
 			}
 
 		}
