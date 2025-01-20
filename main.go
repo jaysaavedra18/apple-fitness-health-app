@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 )
 
@@ -14,6 +15,7 @@ type Root struct {
 type Data struct {
 	Workouts []Workout `json:"workouts"`
 	Metrics  []Metric  `json:"metrics"`
+	// LastUpdate *string   `json:"lastUpdate,omitempty"`
 }
 type Workout struct {
 	ID       string    `json:"id"`
@@ -70,11 +72,23 @@ func main() {
 	var allMetrics []Metric
 
 	// Sift through the files for json files
+	var lastDate string
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
-			filePath := dirPath + "/" + file.Name()
-			fmt.Printf("File: %s\n", filePath)
+			// Extract the date from the filename
+			re := regexp.MustCompile(`\d{4}-\d{2}-\d{2}`)
+			matches := re.FindAllString(file.Name(), -1)
+			if len(matches) > 0 {
+				lastDate = matches[len(matches)-1]
+				fmt.Println("Extracted Date:", lastDate)
+			} else {
+				fmt.Println("No date found in filename")
+			}
 
+			// Compare file date to last cache update
+
+			// Read file data
+			filePath := dirPath + "/" + file.Name()
 			content, err := os.ReadFile(filePath)
 			if err != nil {
 				panic(err)
@@ -88,6 +102,7 @@ func main() {
 			// Aggregate the workouts and metrics
 			allWorkouts = append(allWorkouts, root.Data.Workouts...)
 			allMetrics = append(allMetrics, root.Data.Metrics...)
+
 
 		}
 	}
