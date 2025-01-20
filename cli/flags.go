@@ -57,6 +57,7 @@ func ParseFlags() CLIFlags {
 		fmt.Fprintf(os.Stderr, "  fitness -f name -v \"Pool Swim\"      # Show only Pool Swim workouts\n")
 		fmt.Fprintf(os.Stderr, "  fitness -sort duration -desc        # Sort by duration descending\n")
 		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
+		fmt.Println()
 	}
 
 	flag.Parse()

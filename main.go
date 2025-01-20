@@ -10,12 +10,12 @@ import (
 )
 
 func main() {
+	fmt.Println()
 	flags := cli.ParseFlags()
 	opts := cli.CreatePrintOptions(flags)
 
 	// Import data
 	data.ImportData()
-	fmt.Println()
 
 	// Determine which data to display
 	var err error
@@ -33,4 +33,5 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 		os.Exit(1)
 	}
+	fmt.Println()
 }
