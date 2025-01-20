@@ -112,6 +112,8 @@ func main() {
 			// Compare the dates
 			if cacheUpdateDate.Before(currentFileDate) {
 				fmt.Printf("The file date %s is more recent. Updating the cache.\n", currentFileDate)
+				lastUpdated = currentFileDate.Format("2006-01-02")
+				fmt.Println("Last Updated:", lastUpdated)
 			} else if cacheUpdateDate.After(currentFileDate) {
 				fmt.Printf("The file date %s is older. No update needed.\n", currentFileDate)
 				continue
@@ -138,17 +140,18 @@ func main() {
 		}
 	}
 
-	// writeToCache(allWorkouts, allMetrics)
+	writeToCache(allWorkouts, allMetrics, &lastUpdated)
 
 }
 
-func writeToCache(allWorkouts []Workout, allMetrics []Metric) error {
+func writeToCache(allWorkouts []Workout, allMetrics []Metric, lastUpdated *string) error {
 	// Create the Root structure to match the original format
 	root := Root{
 		Data: Data{
 			Workouts: allWorkouts,
 			Metrics:  allMetrics,
 		},
+		LastUpdated: lastUpdated,
 	}
 
 	// Marshal the Root structure into JSON
