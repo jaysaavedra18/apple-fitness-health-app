@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"os"
 	"regexp"
@@ -51,6 +52,7 @@ type Metric struct { // Metric represents a collection of measurements over time
 // Global constants and variables used throughout the program
 const (
 	dateFormat       = "2006-01-02"
+	timeFormat       = "2006-01-02 15:04:05 -0700"
 	iCloudDirPath    = "/Users/saavedj/Library/Mobile Documents/com~apple~CloudDocs/health-data"
 	cacheFilePath    = "cache.json"
 	dateRegexPattern = `\d{4}-\d{2}-\d{2}`
@@ -162,7 +164,7 @@ func importData() {
 		}
 		fmt.Printf("Cache updated with data through: %s\n", latestUpdate)
 	} else {
-		fmt.Println("No new data found, cache remains current")
+		// fmt.Println("No new data found, cache remains current")
 	}
 }
 
@@ -274,8 +276,14 @@ func printWorkouts(workouts []Workout, opts PrintOptions) error {
 		fmt.Printf("ID: %s\n", w.ID)
 
 		// Parse and format the start and end times from RFC3339 format
-		start, _ := time.Parse(time.RFC3339, w.Start)
-		end, _ := time.Parse(time.RFC3339, w.End)
+		start, err := time.Parse(timeFormat, w.Start)
+		if err != nil {
+			fmt.Printf("Error parsing start time %q: %v\n", w.Start, err)
+		}
+		end, err := time.Parse(timeFormat, w.End)
+		if err != nil {
+			fmt.Printf("Error parsing end time %q: %v\n", w.End, err)
+		}
 		fmt.Printf("Start: %s\n", start.Format(opts.TimeFormat))
 		fmt.Printf("End: %s\n", end.Format(opts.TimeFormat))
 		fmt.Printf("Duration: %.2f minutes\n", w.Duration)
@@ -314,7 +322,10 @@ func printWorkoutsCompact(workouts []Workout, opts PrintOptions) error {
 	// Print each workout as a single line
 	for _, w := range workouts {
 		// Parse the start time
-		start, _ := time.Parse(time.RFC3339, w.Start)
+		start, err := time.Parse(timeFormat, w.Start)
+		if err != nil {
+			fmt.Printf("Error parsing start time %q: %v\n", w.Start, err)
+		}
 
 		// Handle optional distance field
 		distance := "-" // Default value if nil
@@ -384,26 +395,134 @@ func truncate(s string, n int) string {
 	return s[:n-3] + "..." // Leave room for "..."
 }
 
-func main() {
-	importData() // Load the data (implementation not shown)
+type CLIFlags struct {
+	maxItems    int
+	compact     bool
+	timeFormat  string
+	filterType  string
+	filterValue string
+	sortBy      string
+	sortDesc    bool
+	dataType    string
+	include     string
+	exclude     string
+}
 
-	// Example 1: Basic usage with item limit
-	opts := DefaultPrintOptions()
-	opts.MaxItems = 7
-	PrintHealthData(allWorkouts, opts)
+func parseFlags() CLIFlags {
+	flags := CLIFlags{}
 
-	// Example 2: Filtered display showing only Pool Swim workouts
-	opts.Filter = func(v interface{}) bool {
+	// Basic display options
+	flag.IntVar(&flags.maxItems, "n", 0, "Maximum number of items to display (0 for all)")
+	flag.BoolVar(&flags.compact, "c", false, "Use compact display mode")
+	flag.StringVar(&flags.timeFormat, "time-format", "2006-01-02 15:04:05", "Time format string")
+
+	// Filtering options
+	flag.StringVar(&flags.filterType, "f", "", "Filter type (name, distance, duration, energy)")
+	flag.StringVar(&flags.filterValue, "v", "", "Filter value")
+
+	// Sorting options
+	flag.StringVar(&flags.sortBy, "sort", "", "Sort by field (name, date, duration, distance, energy)")
+	flag.BoolVar(&flags.sortDesc, "desc", false, "Sort in descending order")
+
+	// Data type selection
+	flag.StringVar(&flags.dataType, "type", "workouts", "Data type to display (workouts or metrics)")
+
+	// Field inclusion/exclusion
+	flag.StringVar(&flags.include, "i", "", "Include only specific fields (comma-separated)")
+	flag.StringVar(&flags.exclude, "x", "", "Exclude specific fields (comma-separated)")
+
+	// Add custom usage message
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr, "Usage of Health Data Printer:\n")
+		fmt.Fprintf(os.Stderr, "  health-printer [options]\n\n")
+		fmt.Fprintf(os.Stderr, "Options:\n")
+		flag.PrintDefaults()
+		fmt.Fprintf(os.Stderr, "\nExamples:\n")
+		fmt.Fprintf(os.Stderr, "  health-printer -n 10 -c                    # Show 10 items in compact mode\n")
+		fmt.Fprintf(os.Stderr, "  health-printer -f name -v \"Pool Swim\"      # Show only Pool Swim workouts\n")
+		fmt.Fprintf(os.Stderr, "  health-printer -sort duration -desc        # Sort by duration descending\n")
+		fmt.Fprintf(os.Stderr, "  health-printer -i \"name,duration,distance\" # Show only specific fields\n")
+	}
+
+	flag.Parse()
+	return flags
+}
+
+func createFilterFunction(flags CLIFlags) FilterFunc {
+	if flags.filterType == "" || flags.filterValue == "" {
+		return nil
+	}
+
+	return func(v interface{}) bool {
 		if w, ok := v.(Workout); ok {
-			return w.Name != "" && w.Name == "Pool Swim"
+			switch flags.filterType {
+			case "name":
+				return strings.Contains(strings.ToLower(w.Name),
+					strings.ToLower(flags.filterValue))
+			case "distance":
+				if w.Distance != nil {
+					val := w.Distance.Qty
+					return fmt.Sprintf("%.1f", val) == flags.filterValue
+				}
+			case "duration":
+				return fmt.Sprintf("%.1f", w.Duration) == flags.filterValue
+			case "energy":
+				if w.ActiveEnergyBurned != nil {
+					val := w.ActiveEnergyBurned.Qty
+					return fmt.Sprintf("%.1f", val) == flags.filterValue
+				}
+			}
 		}
 		return false
 	}
-	PrintHealthData(allWorkouts, opts)
+}
 
-	// Example 3: Compact display with item limit
-	opts = DefaultPrintOptions()
-	opts.Compact = true
-	opts.MaxItems = 10
-	PrintHealthData(allWorkouts, opts)
+func createPrintOptions(flags CLIFlags) PrintOptions {
+	opts := DefaultPrintOptions()
+	opts.TimeFormat = flags.timeFormat
+	opts.MaxItems = flags.maxItems
+	opts.Compact = flags.compact
+	opts.Filter = createFilterFunction(flags)
+
+	// Handle include/exclude fields
+	if flags.include != "" {
+		opts.IncludeFields = strings.Split(flags.include, ",")
+		for i := range opts.IncludeFields {
+			opts.IncludeFields[i] = strings.TrimSpace(opts.IncludeFields[i])
+		}
+	}
+	if flags.exclude != "" {
+		opts.ExcludeFields = strings.Split(flags.exclude, ",")
+		for i := range opts.ExcludeFields {
+			opts.ExcludeFields[i] = strings.TrimSpace(opts.ExcludeFields[i])
+		}
+	}
+
+	return opts
+}
+
+func main() {
+	flags := parseFlags()
+	opts := createPrintOptions(flags)
+
+	// Import data
+	importData()
+	fmt.Println()
+
+	// Determine which data to display
+	var err error
+	switch flags.dataType {
+	case "workouts":
+		err = PrintHealthData(allWorkouts, opts)
+	case "metrics":
+		err = PrintHealthData(allMetrics, opts)
+	default:
+		fmt.Fprintf(os.Stderr, "Invalid data type: %s\n", flags.dataType)
+		os.Exit(1)
+	}
+
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		os.Exit(1)
+	}
 }
