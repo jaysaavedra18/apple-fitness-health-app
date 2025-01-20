@@ -48,15 +48,15 @@ func ParseFlags() CLIFlags {
 
 	// Add custom usage message
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "Usage of Health Data Printer:\n")
-		fmt.Fprintf(os.Stderr, "  health-printer [options]\n\n")
+		fmt.Fprintf(os.Stderr, "Usage of Health Fitness Data Printer:\n")
+		fmt.Fprintf(os.Stderr, "  fitness [options]\n\n")
 		fmt.Fprintf(os.Stderr, "Options:\n")
 		flag.PrintDefaults()
 		fmt.Fprintf(os.Stderr, "\nExamples:\n")
-		fmt.Fprintf(os.Stderr, "  health-printer -n 10 -c                    # Show 10 items in compact mode\n")
-		fmt.Fprintf(os.Stderr, "  health-printer -f name -v \"Pool Swim\"      # Show only Pool Swim workouts\n")
-		fmt.Fprintf(os.Stderr, "  health-printer -sort duration -desc        # Sort by duration descending\n")
-		fmt.Fprintf(os.Stderr, "  health-printer -i \"name,duration,distance\" # Show only specific fields\n")
+		fmt.Fprintf(os.Stderr, "  fitness -n 10 -c                    # Show 10 items in compact mode\n")
+		fmt.Fprintf(os.Stderr, "  fitness -f name -v \"Pool Swim\"      # Show only Pool Swim workouts\n")
+		fmt.Fprintf(os.Stderr, "  fitness -sort duration -desc        # Sort by duration descending\n")
+		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
 	}
 
 	flag.Parse()
