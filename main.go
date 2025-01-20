@@ -16,36 +16,36 @@ type Data struct {
 	Metrics  []Metric  `json:"metrics"`
 }
 type Workout struct {
-	ID       string  `json:"id"`
-	Name     string  `json:"name"`
-	Start    string  `json:"start"`
-	End      string  `json:"end"`
-	Duration float64 `json:"duration"`
-	Distance struct {
+	ID       string    `json:"id"`
+	Name     string    `json:"name"`
+	Start    string    `json:"start"`
+	End      string    `json:"end"`
+	Duration float64   `json:"duration"`
+	Distance *struct { // Optionals use pointers
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
-	} `json:"distance"`
-	ActiveEnergyBurned struct {
+	} `json:"distance,omitempty"`
+	ActiveEnergyBurned *struct {
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
-	} `json:"activeEnergyBurned"`
-	Intensity struct {
+	} `json:"activeEnergyBurned,omitempty"`
+	Intensity *struct {
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
-	} `json:"intensity"`
-	Location string `json:"location"`
-	Humidity struct {
+	} `json:"intensity,omitempty"`
+	Location *string `json:"location,omitempty"`
+	Humidity *struct {
 		Units string `json:"units"`
 		Qty   int64  `json:"qty"`
-	} `json:"humidity"`
-	Temperature struct {
+	} `json:"humidity,omitempty"`
+	Temperature *struct {
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
-	} `json:"temperature"`
-	LapLength struct {
+	} `json:"temperature,omitempty"`
+	LapLength *struct {
 		Units string  `json:"units"`
 		Qty   float64 `json:"qty"`
-	} `json:"lapLength"`
+	} `json:"lapLength,omitempty"`
 }
 type Metric struct {
 	Data []struct {
