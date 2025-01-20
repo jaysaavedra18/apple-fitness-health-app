@@ -100,20 +100,21 @@ func main() {
 			}
 
 			// Compare file date to last cache update
-			lastUpdatedTime, err := time.Parse("2006-01-02", lastUpdated)
+			cacheUpdateDate, err := time.Parse("2006-01-02", lastUpdated)
 			if err != nil {
 				panic(err)
 			}
-			thisDateTime, err := time.Parse("2006-01-02", thisDate)
+			currentFileDate, err := time.Parse("2006-01-02", thisDate)
 			if err != nil {
 				panic(err)
 			}
 
 			// Compare the dates
-			if lastUpdatedTime.Before(thisDateTime) {
-				fmt.Printf("The file date %s is more recent. Updating the cache.\n", thisDateTime)
-			} else if lastUpdatedTime.After(thisDateTime) {
-				fmt.Printf("The file date %s is older. No update needed.\n", thisDateTime)
+			if cacheUpdateDate.Before(currentFileDate) {
+				fmt.Printf("The file date %s is more recent. Updating the cache.\n", currentFileDate)
+			} else if cacheUpdateDate.After(currentFileDate) {
+				fmt.Printf("The file date %s is older. No update needed.\n", currentFileDate)
+				continue
 			} else {
 				fmt.Println("The file date is the same as the local cache date. No update needed.")
 			}
