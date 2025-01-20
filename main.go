@@ -66,11 +66,9 @@ func main() {
 	// Sift through the files for json files
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
-			filePath := dirPath + "/" + file.Name()
-			// Parse the date off the filename
+			// Extract the date from the filename
 			re := regexp.MustCompile(`\d{4}-\d{2}-\d{2}`)
 			matches := re.FindAllString(file.Name(), -1)
-
 			if len(matches) > 0 {
 				lastDate := matches[len(matches)-1]
 				fmt.Println("Extracted Date:", lastDate)
@@ -78,6 +76,8 @@ func main() {
 				fmt.Println("No date found in filename")
 			}
 
+			// Read file data
+			filePath := dirPath + "/" + file.Name()
 			content, err := os.ReadFile(filePath)
 			if err != nil {
 				panic(err)
