@@ -143,7 +143,7 @@ func loadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 	return dataWasUpdated, latestFileDate, nil
 }
 
-func main() {
+func importData() {
 	cache, err := loadCache(cacheFilePath)
 	if err != nil {
 		panic(fmt.Sprintf("Failed to load cache: %v", err))
@@ -190,4 +190,8 @@ func writeToCache(allWorkouts []Workout, allMetrics []Metric, lastUpdated *strin
 
 	fmt.Printf("Data written to %s\n", cacheFilePath)
 	return nil
+}
+
+func main() {
+	importData()
 }
