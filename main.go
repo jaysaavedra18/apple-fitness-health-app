@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 )
 
@@ -66,7 +67,16 @@ func main() {
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
 			filePath := dirPath + "/" + file.Name()
-			fmt.Printf("File: %s\n", filePath)
+			// Parse the date off the filename
+			re := regexp.MustCompile(`\d{4}-\d{2}-\d{2}`)
+			matches := re.FindAllString(file.Name(), -1)
+
+			if len(matches) > 0 {
+				lastDate := matches[len(matches)-1]
+				fmt.Println("Extracted Date:", lastDate)
+			} else {
+				fmt.Println("No date found in filename")
+			}
 
 			content, err := os.ReadFile(filePath)
 			if err != nil {
@@ -79,14 +89,14 @@ func main() {
 				panic(err)
 			}
 
-			for _, workout := range root.Data.Workouts {
-				// Do something with all the workout data
-				fmt.Printf("Workout: %+v\n", workout)
-			}
-			for _, metric := range root.Data.Metrics {
-				// Do something with all the metrics data
-				fmt.Printf("Metric: %+v\n", metric)
-			}
+			// for _, workout := range root.Data.Workouts {
+			// 	// Do something with all the workout data
+			// 	fmt.Printf("Workout: %+v\n", workout)
+			// }
+			// for _, metric := range root.Data.Metrics {
+			// 	// Do something with all the metrics data
+			// 	fmt.Printf("Metric: %+v\n", metric)
+			// }
 
 		}
 	}
