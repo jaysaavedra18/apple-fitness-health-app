@@ -79,7 +79,7 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 		}
 		fmt.Printf("Start: %s\n", start.Format(opts.TimeFormat))
 		fmt.Printf("End: %s\n", end.Format(opts.TimeFormat))
-		fmt.Printf("Duration: %.2f minutes\n", w.Duration)
+		fmt.Printf("Duration: %s \n", utils.FormatTime(w.Duration))
 
 		// Print optional fields if they exist
 		// Each if statement checks for nil before attempting to print
@@ -133,10 +133,10 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 		}
 
 		// Print the row with fixed column widths
-		fmt.Printf("%-20s %-19s %-8.1f %-10s %-10s\n",
+		fmt.Printf("%-20s %-19s %-10s %-10s %-10s\n",
 			utils.Truncate(w.Name, 20),       // Truncate name if too long
 			start.Format("2006-01-02 15:04"), // Format date
-			w.Duration,
+			utils.FormatTime(w.Duration),
 			distance,
 			energy)
 	}
