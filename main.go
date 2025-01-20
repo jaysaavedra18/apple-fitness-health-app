@@ -62,6 +62,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	// Aggregate all the data
+	var allWorkouts []Workout
+	var allMetrics []Metric
+
 	// Sift through the files for json files
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".json") {
@@ -78,17 +83,38 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
-
-			for _, workout := range root.Data.Workouts {
-				// Do something with all the workout data
-				fmt.Printf("Workout: %+v\n", workout)
-			}
-			for _, metric := range root.Data.Metrics {
-				// Do something with all the metrics data
-				fmt.Printf("Metric: %+v\n", metric)
-			}
+			// Aggregate the workouts and metrics
+			allWorkouts = append(allWorkouts, root.Data.Workouts...)
+			allMetrics = append(allMetrics, root.Data.Metrics...)
 
 		}
 	}
 
+	writeToCache(allWorkouts, allMetrics)
+
+}
+
+func writeToCache(allWorkouts []Workout, allMetrics []Metric) error {
+	// Create the Root structure to match the original format
+	root := Root{
+		Data: Data{
+			Workouts: allWorkouts,
+			Metrics:  allMetrics,
+		},
+	}
+
+	// Marshal the Root structure into JSON
+	data, err := json.MarshalIndent(root, "", "  ")
+	if err != nil {
+		return fmt.Errorf("error marshaling data: %v", err)
+	}
+
+	// Write the JSON data to cache.json
+	err = os.WriteFile("cache.json", data, 0644)
+	if err != nil {
+		return fmt.Errorf("error writing to file: %v", err)
+	}
+
+	fmt.Println("Data written to cache.json")
+	return nil
 }
