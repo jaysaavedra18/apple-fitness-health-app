@@ -31,8 +31,8 @@ type Workout struct {
 	Intensity          *Measurement `json:"intensity,omitempty"`          // Intensity level of the workout
 	Location           *string      `json:"location,omitempty"`           // Location of the workout
 	Humidity           *struct {    // Humidity data for the workout
-		Units string `json:"units"`
-		Qty   int64  `json:"qty"`
+		Units string  `json:"units"`
+		Qty   float64 `json:"qty"`
 	} `json:"humidity,omitempty"`
 	Temperature *Measurement `json:"temperature,omitempty"` // Temperature during the workout
 	LapLength   *Measurement `json:"lapLength,omitempty"`   // Length of each lap during the workout
