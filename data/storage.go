@@ -13,35 +13,39 @@ import (
 	"fitness/models"
 )
 
+// AllWorkouts and AllMetrics are global variables that store all workout and metric data
 var (
 	AllWorkouts []models.Workout
 	AllMetrics  []models.Metric
 )
 
+// LoadCache reads the cache file and loads the data into the program
 func LoadCache(filename string) (*models.HealthData, error) {
+	// Read the cache file
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
-
+	// Unmarshal the JSON data into a HealthData struct
 	var cache models.HealthData
 	if err := json.Unmarshal(data, &cache); err != nil {
 		return nil, err
 	}
-
 	AllWorkouts = append(AllWorkouts, cache.Data.Workouts...)
 	AllMetrics = append(AllMetrics, cache.Data.Metrics...)
 
-	return &cache, nil
+	return &cache, nil // Return a pointer to the HealthData struct
 }
 
 // Load the new directory files into the program data
 func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string, error) {
+	// Read the directory
 	files, err := os.ReadDir(directoryPath)
 	if err != nil {
 		return false, cacheLastUpdated, err
 	}
 
+	// Prepare variables to track data updates
 	dataWasUpdated := false
 	latestFileDate := cacheLastUpdated
 	cacheDate, err := time.Parse(config.DateFormat, cacheLastUpdated)
@@ -49,12 +53,13 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 		return false, cacheLastUpdated, err
 	}
 
+	// Iterate over files in the directory
 	for _, file := range files {
 		if !strings.HasSuffix(file.Name(), ".json") {
 			continue
 		}
 
-		// Extract date from filename
+		// Extract date from file name
 		re := regexp.MustCompile(config.DateRegexPattern)
 		matches := re.FindAllString(file.Name(), -1)
 		if len(matches) == 0 {
@@ -79,6 +84,7 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 				continue
 			}
 
+			// Unmarshal JSON data into HealthData struct
 			var fileData models.HealthData
 			if err := json.Unmarshal(content, &fileData); err != nil {
 				continue
@@ -99,7 +105,9 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 	return dataWasUpdated, latestFileDate, nil
 }
 
+// Reads the cache file, loads the directory data, writes to the cache if new data is found
 func ImportData() {
+	// Load cache file
 	cache, err := LoadCache(config.CacheFilePath)
 	if err != nil {
 		panic(fmt.Sprintf("Failed to load cache: %v", err))
@@ -122,6 +130,7 @@ func ImportData() {
 	}
 }
 
+// WriteToCache writes the data to the cache file
 func WriteToCache(AllWorkouts []models.Workout, AllMetrics []models.Metric, lastUpdated *string) error {
 	// Create the HealthData structure to match the original format
 	healthData := models.HealthData{
@@ -143,7 +152,6 @@ func WriteToCache(AllWorkouts []models.Workout, AllMetrics []models.Metric, last
 	if err != nil {
 		return fmt.Errorf("error writing to file: %v", err)
 	}
-
 	fmt.Printf("Data written to %s\n", config.CacheFilePath)
 	return nil
 }
