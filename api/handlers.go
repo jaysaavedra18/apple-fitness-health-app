@@ -27,10 +27,11 @@ func HandleWorkoutData(w http.ResponseWriter, r *http.Request) {
 func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 	// Create a copy of the data from AllWorkouts to avoid modifying the original data
 	workoutData := append([]models.Workout(nil), data.AllWorkouts...)
-	var ok bool
+	ok := true
 
 	// Get the workout query parameter from the request
 	var workout = r.URL.Query().Get("workout")
+	fmt.Println("workout:", workout)
 	if workout != "" {
 		workoutData, ok = data.FilterWorkout(workoutData, workout)
 	}
@@ -41,6 +42,7 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 
 	// Get the calories threshold query parameter from the request
 	var calories = r.URL.Query().Get("calories")
+	fmt.Println("calories:", calories)
 	if calories != "" {
 		caloriesParsed, err := strconv.ParseFloat(calories, 64)
 		if err != nil {
