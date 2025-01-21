@@ -259,7 +259,11 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 			weeks = append(weeks, week)
 		}
 		// Sort weeks in descending order (newest first)
-		sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+		if opts.SortDesc {
+			sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+		} else {
+			sort.Sort(sort.StringSlice(weeks))
+		}
 
 		// Print the energy burned per week in the sorted order
 		fmt.Println()

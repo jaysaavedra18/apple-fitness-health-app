@@ -8,6 +8,7 @@ type PrintOptions struct {
 	MaxItems           int        // Maximum number of items to display
 	Compact            bool       // Whether to use compact display mode
 	SortBy             string     // Field to sort results by
+	SortDesc           bool       // Whether to sort in descending order
 	IncludeFields      []string   // Fields to include in output
 	ExcludeFields      []string   // Fields to exclude from output
 	WorkoutsPerMonth   bool       // Whether to show total workouts per month

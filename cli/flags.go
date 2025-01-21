@@ -67,7 +67,7 @@ func ParseFlags() CLIFlags {
 	}
 
 	// Define custom flags incl. total workouts per month
-	flag.BoolVar(&flags.WorkoutsPerMonth, "total-workouts-per-month", false, "Show total workouts per month")
+	flag.BoolVar(&flags.WorkoutsPerMonth, "workouts-per-month", false, "Show total workouts per month")
 	flag.BoolVar(&flags.DistancePerWorkout, "distance-per-workout", false, "Show distance per workout")
 	flag.BoolVar(&flags.EnergyPerWeek, "energy-per-week", false, "Show total energy burned per week")
 
@@ -128,6 +128,7 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	opts.MaxItems = flags.MaxItems
 	opts.Compact = flags.Compact
 	opts.Filter = CreateFilterFunction(flags)
+	opts.SortDesc = flags.SortDesc
 
 	// Apply custom display options
 	opts.WorkoutsPerMonth = flags.WorkoutsPerMonth
