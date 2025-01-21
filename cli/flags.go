@@ -12,17 +12,18 @@ import (
 
 // CLIFlags stores all command-line flags that can be passed to the application
 type CLIFlags struct {
-	MaxItems              int    // Maximum number of items to display (0 means show all)
-	Compact               bool   // Whether to use compact display mode
-	TimeFormat            string // Format string for displaying timestamps
-	FilterType            string // Type of filter to apply (name, distance, etc.)
-	FilterValue           string // Value to filter by
-	SortBy                string // Field to sort results by
-	SortDesc              bool   // Whether to sort in descending order
-	DataType              string // Type of data to display (workouts/metrics)
-	Include               string // Comma-separated list of fields to include
-	Exclude               string // Comma-separated list of fields to exclude
-	TotalWorkoutsPerMonth bool   // Whether to show total workouts per month
+	MaxItems         int    // Maximum number of items to display (0 means show all)
+	Compact          bool   // Whether to use compact display mode
+	TimeFormat       string // Format string for displaying timestamps
+	FilterType       string // Type of filter to apply (name, distance, etc.)
+	FilterValue      string // Value to filter by
+	SortBy           string // Field to sort results by
+	SortDesc         bool   // Whether to sort in descending order
+	DataType         string // Type of data to display (workouts/metrics)
+	Include          string // Comma-separated list of fields to include
+	Exclude          string // Comma-separated list of fields to exclude
+	WorkoutsPerMonth bool   // Whether to show total workouts per month
+
 }
 
 // ParseFlags sets up and processes all command-line flags
@@ -65,7 +66,7 @@ func ParseFlags() CLIFlags {
 	}
 
 	// Define custom flags incl. total workouts per month
-	flag.BoolVar(&flags.TotalWorkoutsPerMonth, "total-workouts-per-month", false, "Show total workouts per month")
+	flag.BoolVar(&flags.WorkoutsPerMonth, "total-workouts-per-month", false, "Show total workouts per month")
 
 	// Parse the flags
 	flag.Parse()
@@ -126,7 +127,7 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	opts.Filter = CreateFilterFunction(flags)
 
 	// Apply custom display options
-	opts.TotalWorkoutsPerMonth = flags.TotalWorkoutsPerMonth
+	opts.WorkoutsPerMonth = flags.WorkoutsPerMonth
 
 	// Process included fields if specified
 	if flags.Include != "" {
