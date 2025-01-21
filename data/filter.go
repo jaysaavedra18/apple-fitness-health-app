@@ -8,6 +8,11 @@ import (
 )
 
 func FilterWorkoutData(workoutType string) ([]models.Workout, bool) {
+	// If workout type is empty, return all workouts
+	if workoutType == "" {
+		return AllWorkouts, true
+	}
+
 	// Split the workout type into workout names if multiple present
 	targetNames := strings.Split(workoutType, ",")
 	for i, name := range targetNames {
