@@ -4,6 +4,7 @@ package api
 import (
 	"encoding/json"
 	"fitness/data"
+	"fmt"
 	"net/http"
 )
 
@@ -24,6 +25,7 @@ func HandleWorkoutData(w http.ResponseWriter, r *http.Request) {
 func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 	// Handle workout query and errors fetching data
 	var workoutType = r.URL.Query().Get("workoutType")
+	fmt.Println("workoutType:", workoutType)
 	workoutData, ok := data.FilterWorkoutData(workoutType)
 	if !ok || workoutData == nil {
 		http.Error(w, "Error filtering workout data", http.StatusInternalServerError)

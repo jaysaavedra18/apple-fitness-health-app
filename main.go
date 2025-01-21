@@ -2,8 +2,10 @@
 package main
 
 import (
-	"fitness/cli"
+	"fitness/api"
 	"fitness/data"
+	"fmt"
+	"net/http"
 )
 
 func main() {
@@ -11,13 +13,13 @@ func main() {
 	data.ImportData()
 
 	// Run the CLI Program
-	cli.StartCLI()
+	// cli.StartCLI()
 
 	// Run the RESTful API Server
-	// api.RegisterRoutes()
-	// fmt.Println("Starting server on :8080")
-	// if err := http.ListenAndServe(":8080", nil); err != nil {
-	// 	fmt.Println("Error starting server:", err)
-	// }
+	api.RegisterRoutes()
+	fmt.Println("Starting server on :8080")
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+		fmt.Println("Error starting server:", err)
+	}
 
 }
