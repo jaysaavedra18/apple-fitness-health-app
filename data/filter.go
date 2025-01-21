@@ -18,7 +18,7 @@ func FilterWorkoutData(workoutType string) ([]models.Workout, bool) {
 	var filteredWorkouts []models.Workout
 	for _, workout := range AllWorkouts { // Check each workout for match
 		for _, name := range targetNames { // Check each target name for match
-			if workout.Name == name {
+			if strings.EqualFold(workout.Name, name) {
 				filteredWorkouts = append(filteredWorkouts, workout)
 				break
 			}
