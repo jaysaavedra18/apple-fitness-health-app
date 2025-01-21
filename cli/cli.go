@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// Start the command line interface
 func StartCLI() {
 	fmt.Println()
 	flags := ParseFlags()
