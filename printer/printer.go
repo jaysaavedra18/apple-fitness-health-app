@@ -220,3 +220,18 @@ func PrintMetrics(metrics []models.Metric, opts PrintOptions) error {
 	}
 	return nil
 }
+
+// PrintCustom flags incl. totalWorkoutsPerMonth
+func PrintCustom(workouts []models.Workout) {
+	// Calculate total workouts per month
+	totalWorkoutsPerMonth := utils.CalculateTotalWorkoutsPerMonth(workouts)
+
+	// Print the total workouts per month
+	fmt.Println()
+	fmt.Println("Total Workouts per Month:")
+	fmt.Println(strings.Repeat("-", 40))
+	for month, count := range totalWorkoutsPerMonth {
+		fmt.Printf("%s: %d\n", month, count)
+	}
+	fmt.Println()
+}

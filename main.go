@@ -2,9 +2,13 @@
 package main
 
 import (
-	"fitness/cli"
+	"fitness/data"
+	"fitness/printer"
 )
 
 func main() {
-	cli.StartCLI()
+	// cli.StartCLI()
+
+	data.ImportData()
+	printer.PrintCustom(data.AllWorkouts)
 }
