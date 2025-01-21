@@ -222,16 +222,18 @@ func PrintMetrics(metrics []models.Metric, opts PrintOptions) error {
 }
 
 // PrintCustom flags incl. totalWorkoutsPerMonth
-func PrintCustom(workouts []models.Workout) {
-	// Calculate total workouts per month
-	totalWorkoutsPerMonth := utils.CalculateTotalWorkoutsPerMonth(workouts)
+func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 
-	// Print the total workouts per month
-	fmt.Println()
-	fmt.Println("Total Workouts per Month:")
-	fmt.Println(strings.Repeat("-", 40))
-	for month, count := range totalWorkoutsPerMonth {
-		fmt.Printf("%s: %d\n", month, count)
+	// If flag is present print the total workouts per month
+	if opts.TotalWorkoutsPerMonth {
+		// Calculate total workouts per month
+		totalWorkoutsPerMonth := utils.CalculateTotalWorkoutsPerMonth(workouts)
+		fmt.Println()
+		fmt.Println("Total Workouts per Month:")
+		fmt.Println(strings.Repeat("-", 40))
+		for month, count := range totalWorkoutsPerMonth {
+			fmt.Printf("%s: %d\n", month, count)
+		}
+		fmt.Println()
 	}
-	fmt.Println()
 }

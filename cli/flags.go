@@ -125,6 +125,9 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	opts.Compact = flags.Compact
 	opts.Filter = CreateFilterFunction(flags)
 
+	// Apply custom display options
+	opts.TotalWorkoutsPerMonth = flags.TotalWorkoutsPerMonth
+
 	// Process included fields if specified
 	if flags.Include != "" {
 		// Split comma-separated field list and trim whitespace

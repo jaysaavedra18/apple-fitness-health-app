@@ -1,14 +1,11 @@
 // main.go
 package main
 
-import (
-	"fitness/data"
-	"fitness/printer"
-)
+import "fitness/cli"
 
 func main() {
-	// cli.StartCLI()
+	cli.StartCLI()
 
-	data.ImportData()
-	printer.PrintCustom(data.AllWorkouts)
+	// data.ImportData()
+	// printer.PrintCustom(data.AllWorkouts)
 }
