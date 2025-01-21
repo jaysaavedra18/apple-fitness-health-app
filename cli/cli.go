@@ -15,9 +15,6 @@ func StartCLI() {
 	flags := ParseFlags()
 	opts := CreatePrintOptions(flags)
 
-	// Import data
-	data.ImportData()
-
 	// Determine which data to display
 	var err error
 	switch flags.DataType {
