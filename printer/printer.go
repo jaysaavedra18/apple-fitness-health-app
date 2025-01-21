@@ -229,17 +229,34 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 	if opts.WorkoutsPerMonth {
 		// Calculate total workouts per month
 		workoutsPerMonth := utils.CalculateWorkoutsPerMonth(workouts)
+
+		// Create a slice to hold the months (for sorting)
+		var months []string
+		for month := range workoutsPerMonth {
+			months = append(months, month)
+		}
+
+		// Sort months based on desc flag
+		if opts.SortDesc {
+			sort.Sort(sort.Reverse(sort.StringSlice(months))) // Sort descending
+		} else {
+			sort.Strings(months) // Sort ascending
+		}
+
+		// Print the total workouts per month
 		fmt.Println()
 		fmt.Println("Workouts per Month:")
 		fmt.Println(strings.Repeat("-", 40))
-		for month, count := range workoutsPerMonth {
-			fmt.Printf("%s: %d\n", month, count)
+		for _, month := range months {
+			fmt.Printf("%s: %d\n", month, workoutsPerMonth[month])
 		}
 		fmt.Println()
 	}
 	if opts.DistancePerWorkout {
 		// Calculate distance per workout
 		distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
+
+		// Print the distance per workout
 		fmt.Println()
 		fmt.Println("Distance per Workout:")
 		fmt.Println(strings.Repeat("-", 40))
@@ -258,7 +275,7 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 		for week := range energyPerWeek {
 			weeks = append(weeks, week)
 		}
-		// Sort weeks in descending order (newest first)
+		// Sort weeks in order based on desc flag
 		if opts.SortDesc {
 			sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
 		} else {
