@@ -58,7 +58,7 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 		if !strings.HasSuffix(file.Name(), ".json") {
 			continue
 		}
-		fmt.Println("Found file:", file.Name()) // Debugging line to see all files
+		// fmt.Println("Found file:", file.Name()) // Debugging line to see all files
 
 		// Extract date from file name
 		re := regexp.MustCompile(config.DateRegexPattern)
@@ -69,7 +69,7 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 		fileDate := matches[len(matches)-1]
 
 		// Debugging: Print the file date extracted
-		fmt.Println("Extracted file date:", fileDate)
+		// fmt.Println("Extracted file date:", fileDate)
 
 		// Parse and compare dates
 		currentFileDate, err := time.Parse(config.DateFormat, fileDate)
@@ -79,7 +79,7 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 		}
 
 		// Debugging: Print current file date and cache date
-		fmt.Printf("Comparing dates: Current file date: %s, Cache date: %s\n", currentFileDate, cacheDate)
+		// fmt.Printf("Comparing dates: Current file date: %s, Cache date: %s\n", currentFileDate, cacheDate)
 
 		// Only process files newer than our cache
 		if currentFileDate.After(cacheDate) {
