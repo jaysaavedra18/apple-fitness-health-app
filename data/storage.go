@@ -128,6 +128,7 @@ func ImportData() {
 	} else {
 		// fmt.Println("No new data found, cache remains current")
 	}
+	fmt.Println()
 }
 
 // WriteToCache writes the data to the cache file
