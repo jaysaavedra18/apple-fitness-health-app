@@ -43,3 +43,35 @@ func CalculateDistancePerWorkout(workouts []models.Workout) map[string]float64 {
 
 	return distancePerWorkout
 }
+
+func CalculateEnergyPerWeek(workouts []models.Workout) map[string]float64 {
+	// Initialize a map to store total energy burned per week
+	energyPerWeek := make(map[string]float64)
+
+	// Iterate over the workouts
+	for _, workout := range workouts {
+		// Check if the workout has energy burned data
+		if workout.ActiveEnergyBurned != nil {
+			// Parse the start date
+			startTime, err := time.Parse("2006-01-02 15:04:05 -0700", workout.Start)
+			if err != nil {
+				// Skip if the date parsing fails
+				continue
+			}
+
+			// Get the date for the start of the week (Monday)
+			// _, week := startTime.ISOWeek()
+
+			// Find the start of the week (Monday)
+			weekStart := startTime.AddDate(0, 0, -int(startTime.Weekday()-time.Monday))
+
+			// Format the date as "MM-DD-YYYY"
+			weekOf := weekStart.Format("01-02-2006")
+
+			// Aggregate the energy burned for the week
+			energyPerWeek[weekOf] += workout.ActiveEnergyBurned.Qty
+		}
+	}
+
+	return energyPerWeek
+}

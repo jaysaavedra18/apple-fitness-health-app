@@ -12,6 +12,7 @@ type PrintOptions struct {
 	ExcludeFields      []string   // Fields to exclude from output
 	WorkoutsPerMonth   bool       // Whether to show total workouts per month
 	DistancePerWorkout bool       // Whether to show distance per workout
+	EnergyPerWeek      bool       // Whether to show total energy per week
 }
 
 // FilterFunc is a function type that filters data

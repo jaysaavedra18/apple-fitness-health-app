@@ -24,6 +24,7 @@ type CLIFlags struct {
 	Exclude            string // Comma-separated list of fields to exclude
 	WorkoutsPerMonth   bool   // Whether to show total workouts per month
 	DistancePerWorkout bool   // Whether to show distance per workout
+	EnergyPerWeek      bool   // Whether to show total energy per week
 }
 
 // ParseFlags sets up and processes all command-line flags
@@ -68,6 +69,7 @@ func ParseFlags() CLIFlags {
 	// Define custom flags incl. total workouts per month
 	flag.BoolVar(&flags.WorkoutsPerMonth, "total-workouts-per-month", false, "Show total workouts per month")
 	flag.BoolVar(&flags.DistancePerWorkout, "distance-per-workout", false, "Show distance per workout")
+	flag.BoolVar(&flags.EnergyPerWeek, "energy-per-week", false, "Show total energy burned per week")
 
 	// Parse the flags
 	flag.Parse()
@@ -130,6 +132,7 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	// Apply custom display options
 	opts.WorkoutsPerMonth = flags.WorkoutsPerMonth
 	opts.DistancePerWorkout = flags.DistancePerWorkout
+	opts.EnergyPerWeek = flags.EnergyPerWeek
 
 	// Process included fields if specified
 	if flags.Include != "" {

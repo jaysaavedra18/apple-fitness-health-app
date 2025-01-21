@@ -2,6 +2,7 @@ package printer
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 	"time"
 
@@ -248,5 +249,26 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 			fmt.Printf("%-20s %-7.2f miles\n", workoutName, totalDistance)
 		}
 		fmt.Println()
+	}
+	if opts.EnergyPerWeek {
+		// Calculate total energy burned per week
+		energyPerWeek := utils.CalculateEnergyPerWeek(workouts)
+		// Create a slice to hold the weeks (for sorting)
+		var weeks []string
+		for week := range energyPerWeek {
+			weeks = append(weeks, week)
+		}
+		// Sort weeks in descending order (newest first)
+		sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+
+		// Print the energy burned per week in the sorted order
+		fmt.Println()
+		fmt.Println("Energy Burned per Week:")
+		fmt.Println(strings.Repeat("-", 40))
+		for _, week := range weeks {
+			fmt.Printf("Week Of %s: %.2f kcal\n", week, energyPerWeek[week])
+		}
+		fmt.Println()
+
 	}
 }
