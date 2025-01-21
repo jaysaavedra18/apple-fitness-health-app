@@ -2,6 +2,7 @@ package printer
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 	"time"
 
@@ -228,17 +229,36 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 	if opts.WorkoutsPerMonth {
 		// Calculate total workouts per month
 		workoutsPerMonth := utils.CalculateWorkoutsPerMonth(workouts)
+
+		// Create a slice to hold the months (for sorting)
+		var months []string
+		for month := range workoutsPerMonth {
+			months = append(months, month)
+		}
+
+		// Sort months based on desc flag
+		if opts.SortDesc {
+			sort.Sort(sort.Reverse(sort.StringSlice(months))) // Sort descending
+		} else {
+			sort.Strings(months) // Sort ascending
+		}
+
+		// Print the total workouts per month
 		fmt.Println()
 		fmt.Println("Workouts per Month:")
 		fmt.Println(strings.Repeat("-", 40))
-		for month, count := range workoutsPerMonth {
-			fmt.Printf("%s: %d\n", month, count)
+		for _, month := range months {
+			fmt.Printf("%s: %d\n", month, workoutsPerMonth[month])
 		}
 		fmt.Println()
 	}
+
+	// If flag is present print the distance per workout
 	if opts.DistancePerWorkout {
 		// Calculate distance per workout
 		distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
+
+		// Print the distance per workout
 		fmt.Println()
 		fmt.Println("Distance per Workout:")
 		fmt.Println(strings.Repeat("-", 40))
@@ -248,5 +268,32 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 			fmt.Printf("%-20s %-7.2f miles\n", workoutName, totalDistance)
 		}
 		fmt.Println()
+	}
+
+	// If flag is present print the total energy burned per week
+	if opts.EnergyPerWeek {
+		// Calculate total energy burned per week
+		energyPerWeek := utils.CalculateEnergyPerWeek(workouts)
+		// Create a slice to hold the weeks (for sorting)
+		var weeks []string
+		for week := range energyPerWeek {
+			weeks = append(weeks, week)
+		}
+		// Sort weeks in order based on desc flag
+		if opts.SortDesc {
+			sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+		} else {
+			sort.Sort(sort.StringSlice(weeks))
+		}
+
+		// Print the energy burned per week in the sorted order
+		fmt.Println()
+		fmt.Println("Energy Burned per Week:")
+		fmt.Println(strings.Repeat("-", 40))
+		for _, week := range weeks {
+			fmt.Printf("Week Of %s: %.2f kcal\n", week, energyPerWeek[week])
+		}
+		fmt.Println()
+
 	}
 }
