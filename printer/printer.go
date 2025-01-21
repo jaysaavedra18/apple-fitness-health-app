@@ -252,6 +252,8 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 		}
 		fmt.Println()
 	}
+
+	// If flag is present print the distance per workout
 	if opts.DistancePerWorkout {
 		// Calculate distance per workout
 		distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
@@ -267,6 +269,8 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 		}
 		fmt.Println()
 	}
+
+	// If flag is present print the total energy burned per week
 	if opts.EnergyPerWeek {
 		// Calculate total energy burned per week
 		energyPerWeek := utils.CalculateEnergyPerWeek(workouts)
