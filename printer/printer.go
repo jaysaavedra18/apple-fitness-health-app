@@ -236,4 +236,17 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 		}
 		fmt.Println()
 	}
+	if opts.DistancePerWorkout {
+		// Calculate distance per workout
+		distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
+		fmt.Println()
+		fmt.Println("Distance per Workout:")
+		fmt.Println(strings.Repeat("-", 40))
+		fmt.Printf("%-20s %-20s\n", "Workout", "Distance")
+		fmt.Println(strings.Repeat("-", 40))
+		for workoutName, totalDistance := range distancePerWorkout {
+			fmt.Printf("%-20s %-7.2f miles\n", workoutName, totalDistance)
+		}
+		fmt.Println()
+	}
 }
