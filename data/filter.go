@@ -36,5 +36,19 @@ func FilterWorkout(workouts []models.Workout, workoutType string) ([]models.Work
 }
 
 func FilterCalories(workouts []models.Workout, calorieThreshold float64) ([]models.Workout, bool) {
-	return nil, false
+	// If calorie threshold is zero, return all workouts
+	if calorieThreshold == 0 {
+		return workouts, true
+	}
+
+	// Filter the workout data based on the calorie threshold
+	var filteredWorkouts []models.Workout
+	for _, workout := range workouts {
+		if workout.ActiveEnergyBurned != nil && workout.ActiveEnergyBurned.Qty >= calorieThreshold {
+			filteredWorkouts = append(filteredWorkouts, workout)
+		}
+	}
+
+	// Return the filtered workouts and a boolean indicating if any were found
+	return filteredWorkouts, len(filteredWorkouts) > 0
 }

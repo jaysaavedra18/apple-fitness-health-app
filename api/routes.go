@@ -7,4 +7,5 @@ import "net/http"
 func RegisterRoutes() {
 	// Register the workout data handler
 	http.HandleFunc("/workouts", HandleWorkoutData)
+
 }
