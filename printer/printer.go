@@ -270,6 +270,34 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 		fmt.Println()
 	}
 
+	// If flag is present print the total distance per week
+	if opts.DistancePerWeek {
+		// Calculate total distance per week
+		distancePerWeek := utils.CalculateDistancePerWeek(workouts)
+
+		// Create a slice to hold the weeks (for sorting)
+		var weeks []string
+		for week := range distancePerWeek {
+			weeks = append(weeks, week)
+		}
+
+		// Sort weeks based on desc flag
+		if opts.SortDesc {
+			sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+		} else {
+			sort.Sort(sort.StringSlice(weeks))
+		}
+
+		// Print the distance per week in the sorted order
+		fmt.Println()
+		fmt.Println("Distance per Week:")
+		fmt.Println(strings.Repeat("-", 40))
+		for _, week := range weeks {
+			fmt.Printf("Week Of %s: %.2f miles\n", week, distancePerWeek[week])
+		}
+		fmt.Println()
+	}
+
 	// If flag is present print the total energy burned per week
 	if opts.EnergyPerWeek {
 		// Calculate total energy burned per week
