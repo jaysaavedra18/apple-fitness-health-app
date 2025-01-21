@@ -5,7 +5,9 @@ import (
 	"encoding/json"
 	"fitness/data"
 	"fitness/models"
+	"fmt"
 	"net/http"
+	"strconv"
 )
 
 // Each handler corresponds to a different endpoint in the API
@@ -23,16 +25,37 @@ func HandleWorkoutData(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
-	// Initialize the workout data to be filtered through
-	var workoutData []models.Workout
+	// Create a copy of the data from AllWorkouts to avoid modifying the original data
+	workoutData := append([]models.Workout(nil), data.AllWorkouts...)
+	ok := true
 
 	// Get the workout query parameter from the request
 	var workout = r.URL.Query().Get("workout")
-	workoutData, ok := data.FilterWorkoutData(workout)
-
+	fmt.Println("workout:", workout)
+	if workout != "" {
+		workoutData, ok = data.FilterWorkout(workoutData, workout)
+	}
 	if !ok || workoutData == nil {
-		http.Error(w, "Error filtering workout data", http.StatusInternalServerError)
+		http.Error(w, "Error filtering workout data by workout name", http.StatusInternalServerError)
 		return
+	}
+
+	// Get the calories threshold query parameter from the request
+	var calories = r.URL.Query().Get("calories")
+	fmt.Println("calories:", calories)
+	if calories != "" {
+		caloriesParsed, err := strconv.ParseFloat(calories, 64)
+		if err != nil {
+			fmt.Println("Error parsing string to float:", err)
+			http.Error(w, "Error parsing calories threshold", http.StatusBadRequest)
+			return
+		}
+		// Filter the workout data based on the parsed calorie threshold
+		workoutData, ok = data.FilterCalories(workoutData, caloriesParsed)
+		if !ok || workoutData == nil {
+			http.Error(w, "Error filtering workout data by calorie threshold", http.StatusInternalServerError)
+			return
+		}
 	}
 
 	// Set response header and return the filtered workout data as JSON
