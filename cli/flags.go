@@ -36,7 +36,7 @@ func ParseFlags() CLIFlags {
 
 	// Define filtering flags
 	flag.StringVar(&flags.FilterType, "f", "", "Filter type (name, distance, duration, energy)")
-	flag.StringVar(&flags.FilterValue, "v", "", "Filter value")
+	flag.StringVar(&flags.FilterValue, "value", "", "Filter value")
 
 	// Define sorting flags
 	flag.StringVar(&flags.SortBy, "sort", "", "Sort by field (name, date, duration, distance, energy)")
@@ -62,7 +62,7 @@ func ParseFlags() CLIFlags {
 		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
 		fmt.Println()
 	}
-
+	// Parse the flags
 	flag.Parse()
 	return flags
 }
@@ -76,27 +76,30 @@ func CreateFilterFunction(flags CLIFlags) printer.FilterFunc {
 	}
 
 	// Return a function that filters Workout objects based on the specified criteria
-	return func(v interface{}) bool {
+	// `ok` will be true if the cast is successful
+	// `w` will contain the Workout object if the cast is successful
+	// `value` is the interface{} type that we are trying to cast
+	return func(value interface{}) bool {
 		// Try to cast the interface to a Workout type
-		if w, ok := v.(models.Workout); ok {
+		if workout, ok := value.(models.Workout); ok {
 			switch flags.FilterType {
 			case "name":
 				// Case-insensitive substring match for workout names
-				return strings.Contains(strings.ToLower(w.Name),
+				return strings.Contains(strings.ToLower(workout.Name),
 					strings.ToLower(flags.FilterValue))
 			case "distance":
 				// Match exact distance value if available
-				if w.Distance != nil {
-					val := w.Distance.Qty
+				if workout.Distance != nil {
+					val := workout.Distance.Qty
 					return fmt.Sprintf("%.1f", val) == flags.FilterValue
 				}
 			case "duration":
 				// Match exact duration value
-				return fmt.Sprintf("%.1f", w.Duration) == flags.FilterValue
+				return fmt.Sprintf("%.1f", workout.Duration) == flags.FilterValue
 			case "energy":
 				// Match exact energy value if available
-				if w.ActiveEnergyBurned != nil {
-					val := w.ActiveEnergyBurned.Qty
+				if workout.ActiveEnergyBurned != nil {
+					val := workout.ActiveEnergyBurned.Qty
 					return fmt.Sprintf("%.1f", val) == flags.FilterValue
 				}
 			}
