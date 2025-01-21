@@ -5,9 +5,9 @@ import (
 	"time"
 )
 
-func CalculateTotalWorkoutsPerMonth(workouts []models.Workout) map[string]int {
+func CalculateWorkoutsPerMonth(workouts []models.Workout) map[string]int {
 	// Initialize a map to store total workouts per month
-	totalWorkoutsPerMonth := make(map[string]int)
+	workoutsPerMonth := make(map[string]int)
 
 	// Iterate over the workouts
 	for _, workout := range workouts {
@@ -22,8 +22,24 @@ func CalculateTotalWorkoutsPerMonth(workouts []models.Workout) map[string]int {
 		yearMonth := startTime.Format("2006-01")
 
 		// Increment the count for the corresponding month
-		totalWorkoutsPerMonth[yearMonth]++
+		workoutsPerMonth[yearMonth]++
 	}
 
-	return totalWorkoutsPerMonth
+	return workoutsPerMonth
+}
+
+func CalculateDistancePerWorkout(workouts []models.Workout) map[string]float64 {
+	// Initialize a map to store total distances per workout type
+	distancePerWorkout := make(map[string]float64)
+
+	// Iterate over the workouts
+	for _, workout := range workouts {
+		// Check if the workout has a distance
+		if workout.Distance != nil {
+			// Aggregate the distance by workout name
+			distancePerWorkout[workout.Name] += workout.Distance.Qty
+		}
+	}
+
+	return distancePerWorkout
 }

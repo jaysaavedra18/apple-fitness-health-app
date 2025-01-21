@@ -221,18 +221,31 @@ func PrintMetrics(metrics []models.Metric, opts PrintOptions) error {
 	return nil
 }
 
-// PrintCustom flags incl. totalWorkoutsPerMonth
+// PrintCustom flags incl. workoutsPerMonth
 func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 
 	// If flag is present print the total workouts per month
-	if opts.TotalWorkoutsPerMonth {
+	if opts.WorkoutsPerMonth {
 		// Calculate total workouts per month
-		totalWorkoutsPerMonth := utils.CalculateTotalWorkoutsPerMonth(workouts)
+		workoutsPerMonth := utils.CalculateWorkoutsPerMonth(workouts)
 		fmt.Println()
-		fmt.Println("Total Workouts per Month:")
+		fmt.Println("Workouts per Month:")
 		fmt.Println(strings.Repeat("-", 40))
-		for month, count := range totalWorkoutsPerMonth {
+		for month, count := range workoutsPerMonth {
 			fmt.Printf("%s: %d\n", month, count)
+		}
+		fmt.Println()
+	}
+	if opts.DistancePerWorkout {
+		// Calculate distance per workout
+		distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
+		fmt.Println()
+		fmt.Println("Distance per Workout:")
+		fmt.Println(strings.Repeat("-", 40))
+		fmt.Printf("%-20s %-20s\n", "Workout", "Distance")
+		fmt.Println(strings.Repeat("-", 40))
+		for workoutName, totalDistance := range distancePerWorkout {
+			fmt.Printf("%-20s %-7.2f miles\n", workoutName, totalDistance)
 		}
 		fmt.Println()
 	}
