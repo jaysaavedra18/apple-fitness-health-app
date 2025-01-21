@@ -1,7 +1,10 @@
 // api/routes.go
 package api
 
-import "net/http"
+import (
+	"fitness/data"
+	"net/http"
+)
 
 // Define API endpoints and map them to their respective handlers
 func HandleWorkoutData(w http.ResponseWriter, r *http.Request) {
@@ -17,7 +20,12 @@ func HandleWorkoutData(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
-	// Get workout data
+	var workoutType = r.URL.Query().Get("workoutType")
+	workoutData, ok := data.FilterWorkoutData(workoutType)
+	if !ok || workoutData == nil {
+		http.Error(w, "Error filtering workout data", http.StatusInternalServerError)
+		return
+	}
 }
 
 func UpdateWorkoutData(w http.ResponseWriter, r *http.Request) {
