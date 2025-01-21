@@ -10,19 +10,15 @@ import (
 	"fitness/utils"
 )
 
-// PrintHealthData is a generic function that handles printing both workout and metric data.
-// It uses type switching to determine which specific print function to call.
-// Parameters:
-//   - data: interface{} that should be either []Workout or []models.Metric
-//   - opts: PrintOptions containing formatting and filtering preferences
+// Print health data to the console
 func PrintHealthData(data interface{}, opts PrintOptions) error {
 	// Type switch to determine what kind of data we're dealing with
 	switch v := data.(type) {
-	case []models.Workout:
+	case []models.Workout: // Use workouts print if we have workout
 		return PrintWorkouts(v, opts)
-	case []models.Metric:
+	case []models.Metric: // Use metrics print if we have metrics
 		return PrintMetrics(v, opts)
-	default:
+	default: // Return an error if we don't recognize the data type
 		return fmt.Errorf("unsupported data type")
 	}
 }
@@ -35,7 +31,7 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 		excludedFields[strings.ToLower(field)] = true
 	}
 
-	// Apply filtering if specified
+	// Filter the workouts if a filter function is provided
 	if opts.Filter != nil {
 		var filtered []models.Workout
 		for _, w := range workouts {
@@ -46,7 +42,7 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 		workouts = filtered
 	}
 
-	// Respect MaxItems limit
+	// Limit the number of items displayed if specified
 	if opts.MaxItems > 0 && len(workouts) > opts.MaxItems {
 		workouts = workouts[:opts.MaxItems]
 	}
@@ -61,6 +57,7 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 	fmt.Println("Workout Data:")
 	fmt.Println(strings.Repeat("-", 80))
 
+	// Print each workout data with formatted fields
 	for i, w := range workouts {
 		if i > 0 {
 			fmt.Println(strings.Repeat("-", 80))
@@ -87,11 +84,10 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 				fmt.Printf("End: %s\n", end.Format(opts.TimeFormat))
 			}
 		}
+		// Handle duration, distance, energy, intensity, location, and temperature
 		if !excludedFields["duration"] {
 			fmt.Printf("Duration: %s\n", utils.FormatTime(w.Duration))
 		}
-
-		// Handle optional fields
 		if !excludedFields["distance"] && w.Distance != nil {
 			fmt.Printf("Distance: %.2f %s\n", w.Distance.Qty, w.Distance.Units)
 		}
@@ -128,7 +124,7 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 	showDistance := !excludedFields["distance"]
 	showEnergy := !excludedFields["energy"]
 
-	// Print header
+	// Print headers incl. name, start, duration, distance, and energy
 	var headers []string
 	if showName {
 		headers = append(headers, fmt.Sprintf("%-20s", "Name"))
@@ -145,18 +141,19 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 	if showEnergy {
 		headers = append(headers, fmt.Sprintf("%-10s", "Energy"))
 	}
-
+	// Print padded headers and separator
 	fmt.Println(strings.Join(headers, " "))
 	fmt.Println(strings.Repeat("-", len(strings.Join(headers, " "))))
 
 	// Print each workout
 	for _, w := range workouts {
+		// Only print fields that aren't excluded
 		var fields []string
 
+		// Handle name, start, duration, distance, and energy
 		if showName {
 			fields = append(fields, fmt.Sprintf("%-20s", utils.Truncate(w.Name, 20)))
 		}
-
 		if showStart {
 			start, err := time.Parse(config.TimeFormat, w.Start)
 			startStr := "-"
@@ -165,11 +162,9 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 			}
 			fields = append(fields, fmt.Sprintf("%-19s", startStr))
 		}
-
 		if showDuration {
 			fields = append(fields, fmt.Sprintf("%-8s", utils.FormatTime(w.Duration)))
 		}
-
 		if showDistance {
 			distance := "-"
 			if w.Distance != nil {
@@ -177,7 +172,6 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 			}
 			fields = append(fields, fmt.Sprintf("%-10s", distance))
 		}
-
 		if showEnergy {
 			energy := "-"
 			if w.ActiveEnergyBurned != nil {
@@ -185,7 +179,7 @@ func PrintWorkoutsCompact(workouts []models.Workout, opts PrintOptions) error {
 			}
 			fields = append(fields, fmt.Sprintf("%-10s", energy))
 		}
-
+		// Print padded fields
 		fmt.Println(strings.Join(fields, " "))
 	}
 	return nil
