@@ -12,16 +12,17 @@ import (
 
 // CLIFlags stores all command-line flags that can be passed to the application
 type CLIFlags struct {
-	MaxItems    int    // Maximum number of items to display (0 means show all)
-	Compact     bool   // Whether to use compact display mode
-	TimeFormat  string // Format string for displaying timestamps
-	FilterType  string // Type of filter to apply (name, distance, etc.)
-	FilterValue string // Value to filter by
-	SortBy      string // Field to sort results by
-	SortDesc    bool   // Whether to sort in descending order
-	DataType    string // Type of data to display (workouts/metrics)
-	Include     string // Comma-separated list of fields to include
-	Exclude     string // Comma-separated list of fields to exclude
+	MaxItems              int    // Maximum number of items to display (0 means show all)
+	Compact               bool   // Whether to use compact display mode
+	TimeFormat            string // Format string for displaying timestamps
+	FilterType            string // Type of filter to apply (name, distance, etc.)
+	FilterValue           string // Value to filter by
+	SortBy                string // Field to sort results by
+	SortDesc              bool   // Whether to sort in descending order
+	DataType              string // Type of data to display (workouts/metrics)
+	Include               string // Comma-separated list of fields to include
+	Exclude               string // Comma-separated list of fields to exclude
+	TotalWorkoutsPerMonth bool   // Whether to show total workouts per month
 }
 
 // ParseFlags sets up and processes all command-line flags
@@ -62,6 +63,10 @@ func ParseFlags() CLIFlags {
 		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
 		fmt.Println()
 	}
+
+	// Define custom flags incl. total workouts per month
+	flag.BoolVar(&flags.TotalWorkoutsPerMonth, "total-workouts-per-month", false, "Show total workouts per month")
+
 	// Parse the flags
 	flag.Parse()
 	return flags
@@ -119,6 +124,9 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	opts.MaxItems = flags.MaxItems
 	opts.Compact = flags.Compact
 	opts.Filter = CreateFilterFunction(flags)
+
+	// Apply custom display options
+	opts.TotalWorkoutsPerMonth = flags.TotalWorkoutsPerMonth
 
 	// Process included fields if specified
 	if flags.Include != "" {
