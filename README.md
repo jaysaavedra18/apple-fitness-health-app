@@ -1,4 +1,4 @@
-# Fitness Data Visualizer
+# Stride - Fitness Data Visualizer
 
 Fitness Data Visualizer is a powerful CLI application designed to streamline the management and visualization of fitness data. It works seamlessly with Apple Health & Fitness data, automatically importing and processing data from iCloud Drive. This application provides a convenient way to access, filter, and display your fitness information.
 
