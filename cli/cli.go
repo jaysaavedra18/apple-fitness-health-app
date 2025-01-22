@@ -9,10 +9,6 @@ import (
 	"os"
 )
 
-func main() {
-	StartCLI()
-}
-
 // Start the command line interface
 func StartCLI() {
 	fmt.Println()
