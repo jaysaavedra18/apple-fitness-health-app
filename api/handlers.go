@@ -61,8 +61,8 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 	// Get the date query parameter from the request
 	var start = r.URL.Query().Get("start")
 	var end = r.URL.Query().Get("end")
-	fmt.Println(w, "start:", start)
-	fmt.Println(w, "end:", end)
+	fmt.Println("start:", start)
+	fmt.Println("end:", end)
 	if start != "" {
 		// Filter the workout data based on the start date
 		workoutData, ok = data.FilterDate(workoutData, start, true)
