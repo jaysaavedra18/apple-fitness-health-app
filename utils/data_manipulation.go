@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fitness/config"
 	"fitness/models"
 	"time"
 )
@@ -12,7 +13,7 @@ func CalculateWorkoutsPerMonth(workouts []models.Workout) map[string]int {
 	// Iterate over the workouts
 	for _, workout := range workouts {
 		// Parse the start date
-		startTime, err := time.Parse("2006-01-02 15:04:05 -0700", workout.Start)
+		startTime, err := time.Parse(config.TimeFormat, workout.Start)
 		if err != nil {
 			// Handle error, e.g., skip the workout if parsing fails
 			continue
@@ -53,7 +54,7 @@ func CalculateDistancePerWeek(workouts []models.Workout) map[string]float64 {
 		// Check if the workout has distance data
 		if workout.Distance != nil {
 			// Parse the start date
-			startTime, err := time.Parse("2006-01-02 15:04:05 -0700", workout.Start)
+			startTime, err := time.Parse(config.TimeFormat, workout.Start)
 			if err != nil {
 				// Skip if the date parsing fails
 				continue
@@ -66,7 +67,7 @@ func CalculateDistancePerWeek(workouts []models.Workout) map[string]float64 {
 			weekStart := startTime.AddDate(0, 0, -int(startTime.Weekday()-time.Monday))
 
 			// Format the date as "MM-DD-YYYY"
-			weekOf := weekStart.Format("01-02-2006")
+			weekOf := weekStart.Format(config.DateFormat)
 
 			// Aggregate the distance for the week
 			distancePerWeek[weekOf] += workout.Distance.Qty
@@ -85,7 +86,7 @@ func CalculateEnergyPerWeek(workouts []models.Workout) map[string]float64 {
 		// Check if the workout has energy burned data
 		if workout.ActiveEnergyBurned != nil {
 			// Parse the start date
-			startTime, err := time.Parse("2006-01-02 15:04:05 -0700", workout.Start)
+			startTime, err := time.Parse(config.TimeFormat, workout.Start)
 			if err != nil {
 				// Skip if the date parsing fails
 				continue
@@ -98,7 +99,7 @@ func CalculateEnergyPerWeek(workouts []models.Workout) map[string]float64 {
 			weekStart := startTime.AddDate(0, 0, -int(startTime.Weekday()-time.Monday))
 
 			// Format the date as "MM-DD-YYYY"
-			weekOf := weekStart.Format("01-02-2006")
+			weekOf := weekStart.Format(config.DateFormat)
 
 			// Aggregate the energy burned for the week
 			energyPerWeek[weekOf] += workout.ActiveEnergyBurned.Qty
