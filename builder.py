@@ -29,5 +29,5 @@ if sys.argv[1] == 'run' and len(sys.argv) > 2:
 os.chdir(backend_dir)
 
 # Run the Go command
-print(f"Running: {commands[sys.argv[1]]}")
+# print(f"Running: {commands[sys.argv[1]]}")
 subprocess.run(command, shell=True, check=True)
