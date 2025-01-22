@@ -34,10 +34,10 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("workout:", workout)
 	if workout != "" {
 		workoutData, ok = data.FilterWorkout(workoutData, workout)
-	}
-	if !ok || workoutData == nil {
-		http.Error(w, "Error filtering workout data by workout name", http.StatusInternalServerError)
-		return
+		if !ok || workoutData == nil {
+			http.Error(w, "Error filtering workout data by workout name", http.StatusInternalServerError)
+			return
+		}
 	}
 
 	// Get the calories threshold query parameter from the request
@@ -54,6 +54,28 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 		workoutData, ok = data.FilterCalories(workoutData, caloriesParsed)
 		if !ok || workoutData == nil {
 			http.Error(w, "Error filtering workout data by calorie threshold", http.StatusInternalServerError)
+			return
+		}
+	}
+
+	// Get the date query parameter from the request
+	var start = r.URL.Query().Get("start")
+	var end = r.URL.Query().Get("end")
+	fmt.Fprintln(w, "start:", start)
+	fmt.Fprintln(w, "end:", end)
+	if start != "" {
+		// Filter the workout data based on the start date
+		workoutData, ok = data.FilterDate(workoutData, start, true)
+		if !ok || workoutData == nil {
+			http.Error(w, "Error filtering workout data by start date", http.StatusInternalServerError)
+			return
+		}
+	}
+	if end != "" {
+		// Filter the workout data based on the end date
+		workoutData, ok = data.FilterDate(workoutData, end, false)
+		if !ok || workoutData == nil {
+			http.Error(w, "Error filtering workout data by end date", http.StatusInternalServerError)
 			return
 		}
 	}
