@@ -26,6 +26,7 @@ type CLIFlags struct {
 	DistancePerWorkout bool   // Whether to show distance per workout
 	DistancePerWeek    bool   // Whether to show total distance per week
 	EnergyPerWeek      bool   // Whether to show total energy per week
+	Server             bool   // Whether to start the RESTful API server
 }
 
 // ParseFlags sets up and processes all command-line flags
@@ -66,6 +67,9 @@ func ParseFlags() CLIFlags {
 		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
 		fmt.Println()
 	}
+
+	// Define server flag
+	flag.BoolVar(&flags.Server, "server", false, "Start the RESTful API server")
 
 	// Define custom flags incl. total workouts per month
 	flag.BoolVar(&flags.WorkoutsPerMonth, "workouts-per-month", false, "Show total workouts per month")
@@ -131,6 +135,9 @@ func CreatePrintOptions(flags CLIFlags) printer.PrintOptions {
 	opts.Compact = flags.Compact
 	opts.Filter = CreateFilterFunction(flags)
 	opts.SortDesc = flags.SortDesc
+
+	// Apply the server flag
+	opts.Server = flags.Server
 
 	// Apply custom display options
 	opts.WorkoutsPerMonth = flags.WorkoutsPerMonth

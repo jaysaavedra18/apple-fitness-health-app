@@ -15,6 +15,7 @@ type PrintOptions struct {
 	DistancePerWorkout bool       // Whether to show distance per workout
 	DistancePerWeek    bool       // Whether to show total distance per week
 	EnergyPerWeek      bool       // Whether to show total energy per week
+	Server             bool       // Whether to start the RESTful API server
 }
 
 // FilterFunc is a function type that filters data
