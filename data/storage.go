@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"regexp"
+	"sort"
 	"strings"
 	"time"
 
@@ -44,6 +45,11 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 	if err != nil {
 		return false, cacheLastUpdated, err
 	}
+
+	// Sort files by name
+	sort.Slice(files, func(i, j int) bool {
+		return files[i].Name() < files[j].Name()
+	})
 
 	// Prepare variables to track data updates
 	dataWasUpdated := false
@@ -98,6 +104,11 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 				fmt.Printf("Error unmarshaling file %s: %v\n", file.Name(), err)
 				continue
 			}
+
+			// Sort data before adding to collections
+			sort.Slice(fileData.Data.Workouts, func(i, j int) bool {
+				return fileData.Data.Workouts[i].Start < fileData.Data.Workouts[j].Start
+			})
 
 			// Update our data collections
 			AllWorkouts = append(AllWorkouts, fileData.Data.Workouts...)

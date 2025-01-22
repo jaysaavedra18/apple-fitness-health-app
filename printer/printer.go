@@ -33,6 +33,14 @@ func PrintWorkouts(workouts []models.Workout, opts PrintOptions) error {
 		excludedFields[strings.ToLower(field)] = true
 	}
 
+	// Reverse data if descending flag is set
+	if opts.SortDesc {
+		// Reverse the workouts array
+		for i, j := 0, len(workouts)-1; i < j; i, j = i+1, j-1 {
+			workouts[i], workouts[j] = workouts[j], workouts[i]
+		}
+	}
+
 	// Filter the workouts if a filter function is provided
 	if opts.Filter != nil {
 		var filtered []models.Workout
