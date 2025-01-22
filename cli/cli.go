@@ -32,7 +32,4 @@ func StartCLI() {
 		os.Exit(1)
 	}
 	fmt.Println()
-
-	// Print any custom data requested
-	printer.PrintCustom(data.AllWorkouts, opts)
 }
