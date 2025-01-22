@@ -1,8 +1,8 @@
 # Node modules
 /node_modules/
 
-# Vite cache
-/.vite/
+# Next.js build output
+/.next/
 
 # Build output
 /dist/
@@ -25,3 +25,18 @@ Thumbs.db
 # Environment files
 .env
 .env.*.local
+
+# Next.js static files
+out/
+
+# Next.js serverless functions
+.serverless/
+
+# .next linting files (if using the Next.js ESLint plugin)
+.nextlint/
+
+# Yarn v2
+/.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
