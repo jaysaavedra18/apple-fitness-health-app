@@ -60,9 +60,6 @@ func CalculateDistancePerWeek(workouts []models.Workout) map[string]float64 {
 				continue
 			}
 
-			// Get the date for the start of the week (Monday)
-			// _, week := startTime.ISOWeek()
-
 			// Find the start of the week (Monday)
 			weekStart := startTime.AddDate(0, 0, -int(startTime.Weekday()-time.Monday))
 
@@ -91,9 +88,6 @@ func CalculateEnergyPerWeek(workouts []models.Workout) map[string]float64 {
 				// Skip if the date parsing fails
 				continue
 			}
-
-			// Get the date for the start of the week (Monday)
-			// _, week := startTime.ISOWeek()
 
 			// Find the start of the week (Monday)
 			weekStart := startTime.AddDate(0, 0, -int(startTime.Weekday()-time.Monday))
