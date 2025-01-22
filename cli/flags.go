@@ -2,6 +2,7 @@
 package cli
 
 import (
+	"fitness/config"
 	"fitness/models"
 	"fitness/printer"
 	"flag"
@@ -34,12 +35,12 @@ type CLIFlags struct {
 func ParseFlags() CLIFlags {
 	flags := CLIFlags{}
 
-	// Define display-related flags
+	// Define basic display flags
 	flag.IntVar(&flags.MaxItems, "n", 0, "Maximum number of items to display (0 for all)")
 	flag.BoolVar(&flags.Compact, "c", false, "Use compact display mode")
-	flag.StringVar(&flags.TimeFormat, "time-format", "2006-01-02 15:04:05", "Time format string")
 
 	// Define filtering flags
+	flag.StringVar(&flags.TimeFormat, "time-format", config.TimeFormat, "Time format string")
 	flag.StringVar(&flags.FilterType, "f", "", "Filter type (name, distance, duration, energy)")
 	flag.StringVar(&flags.FilterValue, "value", "", "Filter value")
 
@@ -54,6 +55,15 @@ func ParseFlags() CLIFlags {
 	flag.StringVar(&flags.Include, "i", "", "Include only specific fields (comma-separated)")
 	flag.StringVar(&flags.Exclude, "x", "", "Exclude specific fields (comma-separated)")
 
+	// Define server flag
+	flag.BoolVar(&flags.Server, "server", false, "Start the RESTful API server")
+
+	// Define custom flags incl. total workouts per month
+	flag.BoolVar(&flags.WorkoutsPerMonth, "workouts-per-month", false, "Show total workouts per month")
+	flag.BoolVar(&flags.DistancePerWorkout, "distance-per-workout", false, "Show distance per workout")
+	flag.BoolVar(&flags.DistancePerWeek, "distance-per-week", false, "Show total distance per week")
+	flag.BoolVar(&flags.EnergyPerWeek, "energy-per-week", false, "Show total energy burned per week")
+
 	// Set up custom usage message with examples
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage of Health Fitness Data Printer:\n")
@@ -67,15 +77,6 @@ func ParseFlags() CLIFlags {
 		fmt.Fprintf(os.Stderr, "  fitness -i \"name,duration,distance\" # Show only specific fields\n")
 		fmt.Println()
 	}
-
-	// Define server flag
-	flag.BoolVar(&flags.Server, "server", false, "Start the RESTful API server")
-
-	// Define custom flags incl. total workouts per month
-	flag.BoolVar(&flags.WorkoutsPerMonth, "workouts-per-month", false, "Show total workouts per month")
-	flag.BoolVar(&flags.DistancePerWorkout, "distance-per-workout", false, "Show distance per workout")
-	flag.BoolVar(&flags.DistancePerWeek, "distance-per-week", false, "Show total distance per week")
-	flag.BoolVar(&flags.EnergyPerWeek, "energy-per-week", false, "Show total energy burned per week")
 
 	// Parse the flags
 	flag.Parse()
