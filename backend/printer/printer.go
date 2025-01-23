@@ -17,9 +17,6 @@ func PrintHealthData(data interface{}, opts PrintOptions) error {
 	// Type switch to determine what kind of data we're dealing with
 	switch v := data.(type) {
 	case []models.Workout: // Use workouts print if we have workout
-		if opts.SortDesc {
-
-		}
 		return PrintWorkouts(v, opts)
 	case []models.Metric: // Use metrics print if we have metrics
 		return PrintMetrics(v, opts)
