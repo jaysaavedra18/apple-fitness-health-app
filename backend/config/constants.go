@@ -9,3 +9,8 @@ const (
 	CacheFilePath    = "/Users/saavedj/Projects/apple-fitness-health-app/backend/data/cache.json"
 	DateRegexPattern = `\d{4}-\d{2}-\d{2}`
 )
+
+// var (
+// 	ICloudDirPath = ""
+// 	CacheFilePath = ""
+// )
