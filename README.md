@@ -6,7 +6,7 @@ Stride is a comprehensive full-stack application for managing, analyzing, and vi
 
 The Stride application is built with a modern, modular architecture:
 
-- **Backend (Go)**: RESTful API for data management and processing
+- **Server (Go)**: RESTful API for data management and processing
 - **Frontend (React)**: Interactive data visualization interface
 - **Machine Learning (Python)**: Neural network for advanced data analysis and predictions
 
@@ -43,14 +43,14 @@ A robust RESTful API built in Go that handles:
 # Clone the repository
 git clone https://github.com/jaysaavedra18/apple-fitness-health-app.git
 
-# Navigate to backend directory
-cd apple-fitness-health-app/backend
+# Navigate to go_server directory
+cd apple-fitness-health-app/go_server
 
 # Build the application
 go build
 
 # Run the server
-./backend
+./fitness
 ```
 
 ### Frontend (React)
@@ -88,7 +88,7 @@ A sophisticated data analysis component using:
 #### Machine Learning Setup
 
 ```bash
-# Navigate to ML backend directory
+# Navigate to ML Backend directory
 cd ../ml-backend
 
 # Create virtual environment
@@ -111,7 +111,7 @@ python server.py
 
 2. **Data Import**
 
-   - Go backend automatically imports data from iCloud Drive
+   - Go server automatically imports data from iCloud Drive
    - Caches data locally for efficient processing
 
 3. **Data Visualization**

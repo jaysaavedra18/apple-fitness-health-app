@@ -31,7 +31,7 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 
 	// Get the workout query parameter from the request
 	var workout = r.URL.Query().Get("workout")
-	fmt.Println("workout:", workout)
+	// fmt.Println("workout:", workout)
 	if workout != "" {
 		workoutData, ok = data.FilterWorkout(workoutData, workout)
 		if !ok || workoutData == nil {
@@ -42,7 +42,7 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 
 	// Get the calories threshold query parameter from the request
 	var calories = r.URL.Query().Get("calories")
-	fmt.Println("calories:", calories)
+	// fmt.Println("calories:", calories)
 	if calories != "" {
 		caloriesParsed, err := strconv.ParseFloat(calories, 64)
 		if err != nil {
@@ -61,8 +61,8 @@ func GetWorkoutData(w http.ResponseWriter, r *http.Request) {
 	// Get the date query parameter from the request
 	var start = r.URL.Query().Get("start")
 	var end = r.URL.Query().Get("end")
-	fmt.Println("start:", start)
-	fmt.Println("end:", end)
+	// fmt.Println("start:", start)
+	// fmt.Println("end:", end)
 	if start != "" {
 		// Filter the workout data based on the start date
 		workoutData, ok = data.FilterDate(workoutData, start, true)
