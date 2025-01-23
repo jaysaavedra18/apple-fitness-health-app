@@ -13,6 +13,7 @@ func CalculateWorkoutsPerMonth(workouts []models.Workout) map[string]int {
 			workoutsPerMonth[startTime.Format("2006-01")]++
 		}
 	}
+
 	return workoutsPerMonth
 }
 
