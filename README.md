@@ -1,93 +1,140 @@
-# Stride - Fitness Data Visualizer
+# Stride - Apple Fitness Data Analysis
 
-Fitness Data Visualizer is a powerful CLI application designed to streamline the management and visualization of fitness data. It works seamlessly with Apple Health & Fitness data, automatically importing and processing data from iCloud Drive. This application provides a convenient way to access, filter, and display your fitness information.
+Stride is a comprehensive full-stack application for managing, analyzing, and visualizing Apple Health & Fitness data. The application now consists of multiple interconnected components designed to provide powerful insights into your fitness journey.
+
+## Architecture
+
+The Stride application is built with a modern, modular architecture:
+
+- **Backend (Go)**: RESTful API for data management and processing
+- **Frontend (React)**: Interactive data visualization interface
+- **Machine Learning (Python)**: Neural network for advanced data analysis and predictions
 
 ## Key Features
 
-- **Automated Data Imports**: Leverages the iOS app, _Health Auto Export_, to import data from Apple Health into iCloud Drive.
-- **Flexible Data Processing**: Aggregates data from iCloud Drive into a local cache, reducing redundant calls and improving performance.
-- **Customizable Data Output**: Supports multiple flags and arguments to tailor data visualization.
-- **Extensive Format Support**: Handles CSV or JSON exports with configurable aggregation settings.
-- **Cloud and API Support**: Compatible with various cloud storage providers and REST APIs.
+- **Automated Data Imports**: Leverages the iOS app, _Health Auto Export_, to import data from Apple Health into iCloud Drive
+- **Comprehensive Data Processing**:
+  - Local data caching to reduce redundant calls
+  - Advanced data aggregation and analysis
+- **Flexible Visualization**: Interactive web interface for exploring fitness metrics
+- **Machine Learning Insights**:
+  - Neural network-powered predictions
+  - Data clustering and pattern recognition
+  - Advanced fitness trend analysis
 
-## Usage
+## Components
+
+### Backend (Go)
+
+A robust RESTful API built in Go that handles:
+
+- Data import from iCloud Drive
+- Data caching and management
+- Expose endpoints for data retrieval and processing
+
+#### Prerequisites
+
+- Go 1.20+
+- Configured iCloud Drive with Apple Health data exports
+
+#### Backend Setup
 
 ```bash
-Usage of Health Fitness Data Printer:
-  fitness [options]
+# Clone the repository
+git clone https://github.com/jaysaavedra18/apple-fitness-health-app.git
 
-Options:
-  -c                   Use compact display mode
-  -desc                Sort in descending order
-  -f string            Filter type (name, distance, duration, energy)
-  -i string            Include only specific fields (comma-separated)
-  -n int               Maximum number of items to display (0 for all)
-  -sort string         Sort by field (name, date, duration, distance, energy)
-  -time-format string  Time format string (default "2006-01-02 15:04:05")
-  -type string         Data type to display (workouts or metrics) (default "workouts")
-  -v string            Filter value
-  -x string            Exclude specific fields (comma-separated)
+# Navigate to backend directory
+cd apple-fitness-health-app/backend
+
+# Build the application
+go build
+
+# Run the server
+./backend
 ```
 
-## Examples
+### Frontend (React)
 
-- Show 10 items in compact mode:
+A modern, responsive web application built with:
 
-  ```bash
-  fitness -n 10 -c
-  ```
+- TypeScript
+- React
+- TailwindCSS
 
-- Display only "Pool Swim" workouts:
+#### Frontend Setup
 
-  ```bash
-  fitness -f name -v "Pool Swim"
-  ```
+```bash
+# Navigate to frontend directory
+cd ../frontend
 
-- Sort by duration in descending order:
+# Install dependencies
+npm install
 
-  ```bash
-  fitness -sort duration -desc
-  ```
+# Start development server
+npm start
+```
 
-- Display specific fields:
-  ```bash
-  fitness -i "name,duration,distance"
-  ```
+### Machine Learning Backend (Python)
 
-## Prerequisites
+A sophisticated data analysis component using:
 
-- iOS device with _Health Auto Export_ installed.
-- iCloud Drive configured to store Apple Health data.
+- Python
+- PyTorch
+- Neural network models for:
+  - Predictive analytics
+  - Workout pattern recognition
+  - Performance trend analysis
 
-## Installation
+#### Machine Learning Setup
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/jaysaavedra18/apple-fitness-health-app.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd apple-fitness-health-app
-   ```
-3. Build the application:
-   ```bash
-   go build
-   ```
-4. Run the CLI:
-   ```bash
-   ./fitness
-   ```
+```bash
+# Navigate to ML backend directory
+cd ../ml-backend
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the ML server
+python server.py
+```
 
 ## How It Works
 
-1. **Data Export**: Use _Health Auto Export_ to define data points, format (CSV/JSON), and frequency of export.
-2. **Data Import**: The CLI imports data from iCloud Drive and caches it locally.
-3. **Data Visualization**: Use the CLI flags to customize and display your fitness data.
+1. **Data Export**
+
+   - Use _Health Auto Export_ iOS app to define export settings
+   - Configure data points, format (CSV/JSON), and export frequency
+
+2. **Data Import**
+
+   - Go backend automatically imports data from iCloud Drive
+   - Caches data locally for efficient processing
+
+3. **Data Visualization**
+
+   - React frontend provides interactive dashboards
+   - Explore detailed fitness metrics and trends
+
+4. **Advanced Analytics**
+   - Python backend with PyTorch applies machine learning techniques
+   - Generate predictions and insights from your fitness data
 
 ## Contributions
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are welcome! Please:
+
+- Open issues for bugs or feature requests
+- Submit pull requests with improvements
+- Follow project coding standards
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, please open an issue on the GitHub repository.
