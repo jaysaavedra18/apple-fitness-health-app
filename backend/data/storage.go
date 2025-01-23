@@ -120,9 +120,14 @@ func LoadDirectory(directoryPath string, cacheLastUpdated string) (bool, string,
 
 // Reads the cache file, loads the directory data, writes to the cache if new data is found
 func ImportData() {
+	// Get environment variables
+	// config.ICloudDirPath = os.Getenv("ICLOUD_DIR_PATH")
+	// config.CacheFilePath = os.Getenv("CACHE_FILE_PATH")
+
 	// Load cache file
 	cache, err := LoadCache(config.CacheFilePath)
 	if err != nil {
+
 		panic(fmt.Sprintf("Failed to load cache: %v", err))
 	}
 

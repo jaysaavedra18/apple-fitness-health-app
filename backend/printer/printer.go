@@ -262,99 +262,66 @@ func PrintCustom(workouts []models.Workout, opts PrintOptions) {
 	}
 }
 
-// PrintWorkoutsPerMonth prints the total number of workouts per month
 func PrintWorkoutsPerMonth(workouts []models.Workout, opts PrintOptions) {
-	// Calculate total workouts per month
-	workoutsPerMonth := utils.CalculateWorkoutsPerMonth(workouts)
-
-	// Create a slice to hold the months (for sorting)
-	var months []string
-	for month := range workoutsPerMonth {
-		months = append(months, month)
-	}
-
-	// Sort months based on desc flag
-	if opts.SortDesc {
-		sort.Sort(sort.Reverse(sort.StringSlice(months))) // Sort descending
-	} else {
-		sort.Strings(months) // Sort ascending
-	}
-
-	// Print the total workouts per month
-	fmt.Println()
-	fmt.Println("Workouts per Month:")
-	fmt.Println(strings.Repeat("-", 40))
-	for _, month := range months {
-		fmt.Printf("%s: %d\n", month, workoutsPerMonth[month])
-	}
-	fmt.Println()
+	printAggregatedData(
+		utils.CalculateWorkoutsPerMonth(workouts),
+		"Workouts Per Month",
+		opts,
+		func(k string, v int) string { return fmt.Sprintf("%s: %d", k, v) },
+	)
 }
 
 func PrintDistancePerWorkout(workouts []models.Workout, opts PrintOptions) {
-	// Calculate distance per workout
-	distancePerWorkout := utils.CalculateDistancePerWorkout(workouts)
-
-	// Print the distance per workout
-	fmt.Println()
-	fmt.Println("Distance per Workout:")
-	fmt.Println(strings.Repeat("-", 40))
-	fmt.Printf("%-20s %-20s\n", "Workout", "Distance")
-	fmt.Println(strings.Repeat("-", 40))
-	for workoutName, totalDistance := range distancePerWorkout {
-		fmt.Printf("%-20s %-7.2f miles\n", workoutName, totalDistance)
-	}
-	fmt.Println()
+	printAggregatedData(
+		utils.CalculateDistancePerWorkout(workouts),
+		"Distance Per Workout",
+		opts,
+		func(k string, v float64) string {
+			if len(k) > 20 {
+				k = k[:25] + "..."
+			}
+			return fmt.Sprintf("%-30s %-7.2f miles", k, v)
+		},
+	)
 }
 
 func PrintDistancePerWeek(workouts []models.Workout, opts PrintOptions) {
-	// Calculate total distance per week
-	distancePerWeek := utils.CalculateDistancePerWeek(workouts)
-
-	// Create a slice to hold the weeks (for sorting)
-	var weeks []string
-	for week := range distancePerWeek {
-		weeks = append(weeks, week)
-	}
-
-	// Sort weeks based on desc flag
-	if opts.SortDesc {
-		sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
-	} else {
-		sort.Sort(sort.StringSlice(weeks))
-	}
-
-	// Print the distance per week in the sorted order
-	fmt.Println()
-	fmt.Println("Distance per Week:")
-	fmt.Println(strings.Repeat("-", 40))
-	for _, week := range weeks {
-		fmt.Printf("Week Of %s: %.2f miles\n", week, distancePerWeek[week])
-	}
-	fmt.Println()
+	printAggregatedData(
+		utils.CalculateDistancePerWeek(workouts),
+		"Distance Per Week",
+		opts,
+		func(k string, v float64) string { return fmt.Sprintf("%s: %.2f miles", k, v) },
+	)
 }
 
 func PrintEnergyPerWeek(workouts []models.Workout, opts PrintOptions) {
-	// Calculate total energy burned per week
-	energyPerWeek := utils.CalculateEnergyPerWeek(workouts)
-	// Create a slice to hold the weeks (for sorting)
-	var weeks []string
-	for week := range energyPerWeek {
-		weeks = append(weeks, week)
+	printAggregatedData(
+		utils.CalculateEnergyPerWeek(workouts),
+		"Energy Burned Per Week",
+		opts,
+		func(k string, v float64) string { return fmt.Sprintf("%-13s%.2f kcal", k+":", v) },
+	)
+}
+
+func printAggregatedData[T any](data map[string]T, title string, opts PrintOptions, formatFunc func(string, T) string) {
+	var keys []string
+	for key := range data {
+		keys = append(keys, key)
 	}
-	// Sort weeks in order based on desc flag
 	if opts.SortDesc {
-		sort.Sort(sort.Reverse(sort.StringSlice(weeks)))
+		sort.Sort(sort.Reverse(sort.StringSlice(keys)))
 	} else {
-		sort.Sort(sort.StringSlice(weeks))
+		sort.Strings(keys)
+	}
+	if opts.MaxItems > 0 && len(keys) > opts.MaxItems {
+		keys = keys[:opts.MaxItems]
 	}
 
-	// Print the energy burned per week in the sorted order
 	fmt.Println()
-	fmt.Println("Energy Burned per Week:")
-	fmt.Println(strings.Repeat("-", 40))
-	for _, week := range weeks {
-		fmt.Printf("Week Of %s: %.2f kcal\n", week, energyPerWeek[week])
+	fmt.Println(title)
+	fmt.Println(strings.Repeat("-", 50))
+	for _, key := range keys {
+		fmt.Println(formatFunc(key, data[key]))
 	}
 	fmt.Println()
-
 }
