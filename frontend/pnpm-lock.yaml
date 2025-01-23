@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      browserslist:
+        specifier: ^4.24.4
+        version: 4.24.4
       next:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
