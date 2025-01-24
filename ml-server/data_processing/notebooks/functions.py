@@ -24,7 +24,7 @@ def analyze_correlation(df, metric1, metric2, show_plot=False):
         plt.show()
 
 # Function to plot trends for a given metric
-def plot_trends(group, metric):
+def plot_metric_trends(group, metric):
     plt.figure(figsize=(10, 5))
     plt.plot(group['date'], group['value'], marker='o', label=metric)
     plt.title(f"Trend for {metric}")
@@ -33,6 +33,18 @@ def plot_trends(group, metric):
     plt.legend()
     plt.grid(True)
     plt.show()
+
+# Function to plot trends for a given metric
+def plot_workout_trends(workouts_group, metric, ylabel="Value"):
+    plt.figure(figsize=(10, 5))
+    plt.plot(workouts_group['start'], workouts_group[metric], marker='o', label=metric)
+    plt.title(f"Trend for {metric}")
+    plt.xlabel("Date")
+    plt.ylabel(ylabel)
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
 
 def linear_regression(pivoted_df, predictor, target):
     # Calculate correlations
