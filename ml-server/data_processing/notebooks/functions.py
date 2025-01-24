@@ -62,7 +62,7 @@ def linear_regression(pivoted_df, predictor, target):
     plt.scatter(X_test, y_test, color='blue', label='Actual')
     plt.scatter(X_test, y_pred, color='red', label='Predicted')
     plt.title("Linear Regression: Exercise Time vs Swimming Distance")
-    plt.xlabel("Exercise Time (min)")
+    plt.xlabel("Exercise Time (seconds)")
     plt.ylabel("Swimming Distance (yd)")
     plt.legend()
     plt.show()
