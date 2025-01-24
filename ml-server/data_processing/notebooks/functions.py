@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
 # Function to analyze correlation between two metrics
-def analyze_correlation(df, metric1, metric2, show_plot=False):
+def analyze_metric_correlation(df, metric1, metric2, show_plot=False):
     # Function implementation
     data1 = df[df['metric'] == metric1]
     data2 = df[df['metric'] == metric2]
@@ -22,6 +22,36 @@ def analyze_correlation(df, metric1, metric2, show_plot=False):
         plt.ylabel(f"{metric1} value")
         plt.grid(True)
         plt.show()
+
+def analyze_workout_correlation(df, column1, column2, show_plot=False):
+    """
+    Analyze the correlation between two numeric columns in the DataFrame.
+    
+    Args:
+        df (pd.DataFrame): The workouts DataFrame.
+        column1 (str): First column to analyze.
+        column2 (str): Second column to analyze.
+        show_plot (bool): Whether to display a scatter plot of the correlation.
+    """
+    # Ensure the columns exist
+    if column1 not in df.columns or column2 not in df.columns:
+        print(f"Error: {column1} or {column2} not found in DataFrame.")
+        return
+    
+    # Calculate correlation
+    correlation = df[column1].corr(df[column2])
+    print(f"Correlation between {column1} and {column2}: {correlation}")
+    
+    # Optionally show scatter plot
+    if show_plot:
+        plt.figure(figsize=(8, 5))
+        plt.scatter(df[column1], df[column2], alpha=0.7)
+        plt.title(f"Correlation between {column1} and {column2}")
+        plt.xlabel(f"{column2} values")
+        plt.ylabel(f"{column1} values")
+        plt.grid(True)
+        plt.show()
+
 
 # Function to plot trends for a given metric
 def plot_metric_trends(group, metric):
