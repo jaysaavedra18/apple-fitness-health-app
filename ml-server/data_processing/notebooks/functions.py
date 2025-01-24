@@ -1,6 +1,9 @@
 # functions.py
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
 
 # Function to analyze correlation between two metrics
 def analyze_correlation(df, metric1, metric2, show_plot=False):
@@ -29,4 +32,37 @@ def plot_trends(group, metric):
     plt.ylabel(f"Value ({group['units'].iloc[0]})")
     plt.legend()
     plt.grid(True)
+    plt.show()
+
+def linear_regression(pivoted_df, predictor, target):
+    # Calculate correlations
+    # correlation_matrix = pivoted_df.corr()
+    # print(correlation_matrix)
+
+    # Prepare data
+    X = pivoted_df[[predictor]].dropna()  # Predictor
+    y = pivoted_df[target].dropna()     # Target
+    X, y = X.align(y, join='inner', axis=0)  # Align datasets to avoid NaNs
+
+    # Split data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Train model
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+
+    # Predictions
+    y_pred = model.predict(X_test)
+
+    # Evaluate model
+    print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
+    print("Model Coefficients:", model.coef_)
+
+    # Plot predictions
+    plt.scatter(X_test, y_test, color='blue', label='Actual')
+    plt.scatter(X_test, y_pred, color='red', label='Predicted')
+    plt.title("Linear Regression: Exercise Time vs Swimming Distance")
+    plt.xlabel("Exercise Time (min)")
+    plt.ylabel("Swimming Distance (yd)")
+    plt.legend()
     plt.show()
