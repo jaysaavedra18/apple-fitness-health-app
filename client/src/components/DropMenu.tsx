@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-const DropdownMenu = () => {
+const DropMenu = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -60,4 +60,4 @@ const DropdownMenu = () => {
   );
 };
 
-export default DropdownMenu;
+export default DropMenu;
