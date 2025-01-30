@@ -31,8 +31,8 @@ export default function Landing() {
               Visualize your health today
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              {/* Track trends, analyze progress, and uncover insights from your
-              Apple Health & Fitness data—all in one place. */}
+              Track trends, analyze progress, and uncover insights from your
+              Apple Health & Fitness data—all in one place.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
