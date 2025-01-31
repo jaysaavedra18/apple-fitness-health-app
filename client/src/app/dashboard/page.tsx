@@ -1,3 +1,5 @@
+import LineGraph from "@/components/LineGraph";
+
 const callouts = [
   {
     name: "Desk and Office",
@@ -17,14 +19,14 @@ const callouts = [
       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
     href: "#",
   },
-  {
-    name: "Travel",
-    description: "Daily commute essentials",
-    imageSrc:
-      "https://tailwindui.com/plus/img/ecommerce-images/home-page-02-edition-03.jpg",
-    imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "#",
-  },
+  // {
+  //   name: "Travel",
+  //   description: "Daily commute essentials",
+  //   imageSrc:
+  //     "https://tailwindui.com/plus/img/ecommerce-images/home-page-02-edition-03.jpg",
+  //   imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+  //   href: "#",
+  // },
 ];
 
 export default function Dashboard() {
@@ -37,7 +39,8 @@ export default function Dashboard() {
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative">
-                <img
+                <LineGraph></LineGraph>
+                {/* <img
                   alt={callout.imageAlt}
                   src={callout.imageSrc}
                   className="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
@@ -50,7 +53,7 @@ export default function Dashboard() {
                 </h3>
                 <p className="text-base font-semibold text-gray-900">
                   {callout.description}
-                </p>
+                </p> */}
               </div>
             ))}
           </div>
