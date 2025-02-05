@@ -1,14 +1,6 @@
 export default function Signup() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -96,7 +88,7 @@ export default function Signup() {
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Have an account?{" "}
-            <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+            <a href="/login" className="font-semibold text-indigo-600 hover:text-indigo-500">
               Log in
             </a>
           </p>
